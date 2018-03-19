@@ -1,0 +1,490 @@
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Flight Var < 16838.44 : HM (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Flight Var >= 16838.44 : HP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Rate of Visit Count per Session >= 2.55 : HP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew < -0.64 : VHP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Interval Mean < 2.42 : VHP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Interval Mean >= 2.42 : HM (10/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session >= 188.54 : VHP (4/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Rate Visit per Session < 0.16 : HM (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Rate Visit per Session >= 0.16 : HP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Flight Kurt < 1.69 : HP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Flight Kurt >= 1.69 : VHP (7/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Rate of Visit < 0 : HP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Rate of Visit >= 0 : VHP (3/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Flight Skew < 0.2
+Rate of Visit < 0 : HM (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Flight Skew < 0.2
+Rate of Visit >= 0 : VHP (4/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Flight Skew < 0.2
+Flight Skew >= 0.2
+Flight SD < 30.11 : HM (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Flight Skew < 0.2
+Flight Skew >= 0.2
+Flight Mean < 11.31
+Rate of Visit Count per Session < 20.66 : VHP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Flight Skew < 0.2
+Flight Skew >= 0.2
+Flight Mean < 11.31
+Rate of Visit Count per Session >= 20.66 : HM (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Flight Skew < 0.2
+Rate Visit per Session >= 0.06 : HM (3/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Interval Skew < 169.78 : HP (5/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Total No < 23.5 : HM (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Total No >= 23.5 : HP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Flight Kurt < 9.72 : HP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Total No < 91 : HM (4/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Rate of Visit Count per Session < 3 : HP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Rate of Visit Count per Session >= 3 : HM (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Rate of Visit Count per Session < 5.04 : HM (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Rate of Visit Count per Session >= 5.04 : HP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Rate of Visit Count per Session >= 6.59 : VHP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= 129.2 : HP (8/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Mean < 37.4 : HM (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Mean >= 37.4 : VHP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Flight SD < 95.62 : HM (3/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Flight SD >= 95.62 : VHP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Rate Visit per Session < 0.1 : VHP (3/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Rate Visit per Session >= 0.1 : HP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Session Duration >= 1243.5 : HP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Interval Kurt < 18.04 : VHP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Interval Kurt >= 18.04 : HM (6/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight SD >= 135.33 : VHP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Flight Mean >= 45.64 : HM (4/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Flight SD < 98.79 : HP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Var < 15868.47 : VHP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Flight Mean < 71.16 : VHP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Session Duration >= 36
+Flight Mean >= 71.16 : HP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Rate of Visit >= 0 : HP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Flight Mean >= 72.17 : VHP (13/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Session Duration < 499 : VHP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Rate Visit per Session < 0.01 : VHP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Flight Skew >= -0.64
+Rate Visit per Session >= 0.01 : HP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Total No >= 10 : HP (3/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 4.99 : HM (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Rate Visit per Session < 0.01 : HM (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit Count per Session < 188.54
+Rate Visit per Session >= 0.01 : VHP (3/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit < 0 : HP (1/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit Count per Session >= 5.6
+Session Duration < 36
+Rate of Visit >= 0 : VHP (5/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Rate of Visit >= 0.02 : HP (2/0)
+
+Flight SD >= 2.22
+Rate of Visit Count per Session < 5.6
+Rate of Visit Count per Session < 2.55
+Flight Skew < 1125.11 : HM (1/0)

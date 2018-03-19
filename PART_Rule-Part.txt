@@ -1,0 +1,498 @@
+
+Rate of Visit Count per Session <= 154.535433: HP (40.0)
+
+Total No <= 3: HP (10.0)
+
+Rate of Visit > 0.00043: HP (41.0)
+
+Session Duration > 1921: VHP (27.0)
+
+Rate of Visit Count per Session <= 1.490805: VHP (41.0/7.0)
+
+Session Duration > -84790: HP (16.0/3.0)
+
+Flight Skew > 170.024665: VHP (9.0)
+
+Rate Visit per Session > 0.005336: HM (9.0)
+
+Rate of Visit > 0.005884: HM (12.0)
+
+Rate of Visit Count per Session <= 0.343667: HM (21.0/5.0)
+
+Flight Kurt <= 10.065697: VHP (9.0)
+
+Flight Skew <= 869.591446: HM (308.0/153.0)
+
+Total No > 3: HP (162.0/14.0)
+
+Total No <= 20: VHP (40.0/2.0)
+
+Rate of Visit Count per Session <= 3.259685: VHP (134.0/3.0)
+
+Total No > 11: VHP (70.0)
+
+Rate of Visit <= 0.003013: VHP (35.0)
+
+Rate of Visit <= 0.002756: HP (43.0)
+
+Total No > 6: VHP (28.0)
+
+Total No <= 3: VHP (30.0/2.0)
+
+Rate Visit per Session <= 0.428571: VHP (19.0)
+
+Total No <= 8: VHP (262.0/81.0)
+
+Rate Visit per Session > 0.243902: HP (8.0)
+
+Flight Skew <= 6.21373: VHP (24.0)
+
+Total No <= 11: HP (23.0)
+
+Session Duration > 3095: VHP (17.0)
+
+Total No > 15: VHP (40.0/5.0)
+
+Rate of Visit > 0.003974: HM (15.0)
+
+Rate of Visit <= 0.001309: VHP (25.0/2.0)
+
+Total No <= 10: VHP (39.0)
+
+Total No <= 11: VHP (14.0)
+
+Total No <= 13: HP (11.0)
+
+Rate of Visit > 0.002871: VHP (20.0)
+
+Session Duration <= 1798: HP (198.0)
+
+Total No > 16: HP (14.0)
+
+Rate of Visit <= 0.000363: VHP (26.0)
+
+Rate of Visit > 0.001155: HP (21.0)
+
+Total No > 31: HP (12.0)
+
+Flight Skew > 949.549321: HM (11.0)
+
+Rate of Visit > 0.000641: HP (70.0/3.0)
+
+Flight SD > 2.565801: HP (11.0)
+
+Rate of Visit <= 0.000653: HP (17.0/1.0)
+
+Rate of Visit <= 0.004685: VHP (28.0)
+
+Total No <= 5: VHP (32.0)
+
+Total No > 7: HP (16.0)
+
+Rate of Visit <= 0.003343: VHP (26.0)
+
+Session Duration <= 1464: VHP (75.0/9.0)
+
+Rate of Visit > 0.00385: HM (16.0)
+
+Rate of Visit > 0.003574: HP (34.0/3.0)
+
+Rate of Visit <= 0.000817: HP (18.0)
+
+Total No <= 5: HP (19.0/1.0)
+
+Total No <= 7: VHP (102.0/10.0)
+
+Rate Visit per Session > 0.00813: HM (21.0)
+
+Total No <= 12: HP (27.0)
+
+Rate of Visit <= 0.002342: VHP (59.0)
+
+Rate of Visit > 0.001606: VHP (30.0)
+
+Flight Kurt <= 7.694777: VHP (26.0/6.0)
+
+Flight Kurt <= 8.520359: HP (11.0)
+
+Rate of Visit Count per Session > 4.59471: HP (61.0)
+
+Total No <= 15: HM (41.0/15.0)
+
+Flight Kurt > 8.336841: HP (12.0)
+
+Session Duration <= 3237: VHP (46.0/12.0)
+
+Session Duration > 1677: HP (17.0)
+
+Session Duration <= 1798: VHP (179.0/82.0)
+
+Total No <= 26: HP (26.0)
+
+Total No <= 14: HP (16.0)
+
+Rate of Visit Count per Session > 2.199618: HP (12.0/1.0)
+
+Rate of Visit Count per Session > 5.242402: HP (24.0/6.0)
+
+Rate of Visit > 0.001361: VHP (131.0/51.0)
+
+Session Duration > 1142: VHP (23.0)
+
+Rate of Visit Count per Session <= 11.444166: HP (25.0)
+
+Rate of Visit <= 0.002179: HP (42.0/1.0)
+
+Flight Kurt <= 6.464073: HP (26.0/1.0)
+
+Total No <= 19: HP (36.0)
+
+Total No > 23: HP (16.0)
+
+Flight Kurt > 6.133073: HM (22.0/4.0)
+
+Rate of Visit > 0.00069: VHP (102.0/3.0)
+
+Rate of Visit <= 0.006194: VHP (21.0)
+
+Total No <= 26: HM (27.0/1.0)
+
+Rate of Visit > 0.00091: HP (31.0/1.0)
+
+Rate of Visit <= 0.003766: HP (42.0/1.0)
+
+Rate of Visit <= 0.001506: VHP (32.0/9.0)
+
+Total No <= 18: VHP (35.0/3.0)
+
+Total No > 6: VHP (40.0)
+
+Rate of Visit > 0.00189: VHP (112.0/16.0)
+
+Total No <= 5: HP (51.0)
+
+Rate of Visit Count per Session <= 672.142857: HP (49.0/5.0)
+
+Rate of Visit Count per Session > 20.316614: VHP (6.0)
+
+Rate of Visit > 0.000246: HP (15.0)
+
+Rate of Visit > 0.000105: HM (36.0/11.0)
+
+Total No <= 4: HP (27.0)
+
+Rate of Visit > 0.000127: HP (65.0/10.0)
+
+Rate Visit per Session > 0.021764: HM (27.0/8.0)
+
+Rate of Visit <= 0.000817: VHP (53.0/5.0)
+
+Rate of Visit <= 0.000357: VHP (19.0/2.0)
+
+Rate of Visit <= 0.000277: VHP (10.0)
+
+Flight Skew <= 81.232813: HM (21.0/4.0)
+
+Flight Skew <= 473.869303: VHP (16.0/4.0)
+
+Total No <= 4: HP (77.0/22.0)
+
+Interval Kurt > 2.330447: VHP (19.0/1.0)
+
+Total No > 6: HM (23.0)
+
+Flight Skew > -1.042683: VHP (15.0/2.0)
+
+Rate of Visit > 0.000218: HP (14.0)
+
+Rate of Visit <= 0.000277: HM (42.0/7.0)
+
+Rate of Visit > 0.001131: VHP (52.0/7.0)
+
+Total No > 4: VHP (60.0)
+
+Flight Kurt <= 1.910767: HM (13.0/1.0)
+
+Flight Skew <= 5.785714: VHP (10.0/1.0)
+
+Rate of Visit > 0.00014: HM (12.0/1.0)
+
+Total No <= 6: HP (22.0)
+
+Rate of Visit > 0.00084: HP (17.0/1.0)
+
+Flight Kurt > 1.839089: HP (14.0/6.0)
+
+Total No > 3: VHP (34.0/9.0)
+
+Total No <= 4: HP (11.0)
+
+Rate Visit per Session > 0.00865: VHP (19.0/3.0)
+
+Total No <= 5: HM (10.0/1.0)
+
+Flight Kurt <= 2.039792: VHP (20.0/1.0)
+
+Interval Mean > 2.833333: VHP (14.0)
+
+Total No > 4: HP (35.0)
+
+Rate of Visit > 0.001602: HP (10.0)
+
+Session Duration <= 1302: HP (40.0/9.0)
+
+Session Duration <= 1943: HP (20.0)
+
+Rate of Visit <= 0.00475: HP (41.0)
+
+Rate of Visit > 0.003074: HP (13.0/1.0)
+
+Rate of Visit <= 0.002208: HM (9.0)
+
+Rate of Visit > 0.003448: HM (11.0/1.0)
+
+Rate of Visit <= 0.00083: HP (15.0)
+
+Rate of Visit > 0.001262: HP (23.0/4.0)
+
+Rate of Visit <= 0.005656: HM (70.0/1.0)
+
+Rate of Visit > 0.005019: HP (12.0/1.0)
+
+Total No <= 4: HP (8.0)
+
+Rate of Visit <= 0.000467: VHP (92.0/38.0)
+
+Rate of Visit > 0.0002: HP (25.0)
+
+Flight Kurt > 1.509148: HM (19.0/1.0)
+
+Total No > 5: VHP (25.0/8.0)
+
+Rate of Visit <= 0.000617: HP (50.0/6.0)
+
+Session Duration > 251: HM (43.0/4.0)
+
+Rate Visit per Session > 0.115385: HM (13.0)
+
+Rate of Visit > 0.001361: HP (8.0)
+
+Rate of Visit <= 0.001506: VHP (17.0)
+
+Total No <= 15: HP (27.0)
+
+Rate of Visit <= 0.001435: HP (47.0)
+
+Rate of Visit <= 0.000601: HP (51.0)
+
+Rate of Visit <= 0.00995: VHP (27.0/1.0)
+
+Session Duration <= 2788: HM (62.0)
+
+Rate of Visit <= 0.00058: VHP (25.0)
+
+Rate of Visit > 0.000655: HM (22.0/1.0)
+
+Session Duration <= 2186: HP (175.0)
+
+Rate of Visit Count per Session <= 11.710723: VHP (60.0/1.0)
+
+Rate of Visit Count per Session <= 11.830018: VHP (39.0/1.0)
+
+Total No <= 62: HM (46.0/9.0)
+
+Session Duration > 1685: VHP (35.0/3.0)
+
+Total No <= 37: VHP (15.0/3.0)
+
+Rate of Visit Count per Session > 5.600858: VHP (16.0)
+
+Rate of Visit Count per Session <= 11.859472: HM (50.0)
+
+Session Duration <= 1606: HM (14.0)
+
+Rate of Visit Count per Session <= 8.762172: HM (33.0/1.0)
+
+Flight Skew > 91.10123: HM (24.0)
+
+Rate of Visit <= 0.0002: VHP (16.0)
+
+Flight Skew > -0.487952: HM (19.0/4.0)
+
+Rate Visit per Session <= 0.065395: HM (16.0)
+
+Rate of Visit <= 0.008393: HM (56.0/1.0)
+
+Session Duration > 1725: HM (80.0/3.0)
+
+Flight Kurt > 53.545305: VHP (6.0)
+
+Rate of Visit <= 0.014831: HM (18.0/1.0)
+
+Rate of Visit <= 0.006412: VHP (10.0/1.0)
+
+Rate Visit per Session <= 0.101695: HM (9.0)
+
+Rate of Visit <= 0.017857: HP (47.0)
+
+Rate of Visit > 0.003343: HP (34.0/4.0)
+
+Rate of Visit > 0.008115: HM (22.0/3.0)
+
+Rate of Visit Count per Session <= 3.906964: VHP (60.0/13.0)
+
+Total No <= 6: HP (16.0/1.0)
+
+Total No <= 12: HP (9.0)
+
+Total No > 10: HP (5.0)
+
+Rate Visit per Session > 0.023889: HM (15.0)
+
+Rate Visit per Session > 0.005311: HM (15.0/5.0)
+
+Rate Visit per Session <= 0.077273: HM (10.0/2.0)
+
+Total No <= 65: HM (8.0/2.0)
+
+Flight SD <= 239.479488: HM (104.0/55.0)
+
+Rate of Visit > 0.001113: HM (19.0/1.0)
+
+Total No > 19: HM (17.0/2.0)
+
+Total No <= 25: HP (38.0)
+
+Flight SD <= 290.419847: VHP (10.0)
+
+Rate Visit per Session <= 0.052147: HM (19.0/1.0)
+
+Total No <= 17: HM (15.0)
+
+Rate of Visit > 0.00126: HP (23.0/1.0)
+
+Rate of Visit > 0.001384: HP (19.0)
+
+Total No > 10: HM (20.0/8.0)
+
+Total No <= 73: HP (13.0)
+
+Rate of Visit > 0.001393: HP (15.0)
+
+Rate Visit per Session > 0.079646: HP (14.0/1.0)
+
+Rate of Visit <= 0.000617: HM (33.0/13.0)
+
+Total No <= 23: HM (7.0)
+
+Total No <= 24: VHP (11.0)
+
+Total No <= 18: HP (48.0)
+
+Total No <= 7: HP (25.0)
+
+Interval Skew > -0.623288: VHP (10.0)
+
+Rate of Visit <= 0.006335: HM (47.0/2.0)
+
+Rate of Visit <= 0.016862: HP (10.0)
+
+Rate Visit per Session <= 0.0141: HP (15.0/1.0)
+
+Session Duration <= 2724: HP (30.0/1.0)
+
+Total No <= 34: HM (5.0)
+
+Rate of Visit Count per Session > 1.804362: VHP (9.0)
+
+Rate of Visit Count per Session <= 0.292323: VHP (5.0)
+
+Flight Kurt > 16.697861: HP (11.0/2.0)
+
+Rate Visit per Session <= 0.025735: HP (3.0/1.0)
+
+Rate Visit per Session <= 0.020385: HM (7.0)
+
+Flight SD <= 165.66897: HP (12.0/1.0)
+
+Rate of Visit > 0.023569: HM (7.0/1.0)
+
+Session Duration <= 1186: HM (6.0/1.0)
+
+Flight Skew <= 775.928729: HP (13.0/1.0)
+
+Flight Skew <= 1080.031969: HM (13.0/1.0)
+
+Interval SD > 128.967048: HP (619.0/337.0)
+
+Rate of Visit > 0.000385: VHP (8.0/1.0)
+
+Flight Kurt <= 2.441084: HP (14.0/6.0)
+
+Flight Kurt <= 4.172582: HM (20.0)
+
+Session Duration > 5853: VHP (20.0/5.0)
+
+Rate of Visit <= 0.014544: HP (13.0)
+
+Session Duration > 7: VHP (27.0/9.0)
+
+Rate of Visit Count per Session <= 3.972927: HM (11.0)
+
+Total No <= 75: HP (11.0/1.0)
+
+Rate of Visit > 0.001032: HP (18.0)
+
+Rate of Visit > 0.003118: HM (8.0)
+
+Rate of Visit Count per Session > 1.217785: HP (23.0)
+
+Flight SD > 368.887997: HP (7.0/1.0)
+
+Flight SD <= 292.41132: HM (6.0)
+
+Session Duration <= 8613: VHP (20.0/9.0)
+
+Session Duration > 5598: HP (12.0)
+
+Flight Kurt > 13.16667: HP (5.0/1.0)
+
+Rate of Visit Count per Session <= 0.47289: HM (6.0)
+
+Session Duration <= 3584: VHP (110.0/33.0)
+
+Rate of Visit <= 0.016403: VHP (36.0/9.0)
+
+Flight Kurt > 9.899793: HP (17.0/4.0)
+
+Rate of Visit <= 0.00609: HP (31.0/12.0)
+
+Rate Visit per Session > 0.014372: HM (17.0)
+
+Rate of Visit <= 0.003339: HM (57.0/18.0)
+
+Total No > 23: VHP (30.0/2.0)
+
+Session Duration <= 89: HP (34.0)
+
+Total No <= 50: HP (4.0)
+
+Rate of Visit > 0.004629: HM (23.0)
+
+Rate Visit per Session > 0.004811: HP (5.0)
+
+Total No <= 27: VHP (34.0/2.0)
+
+Total No <= 9: VHP (953.0/574.0)
+
+Rate of Visit > 0.000835: HP (14.0)
+
+Rate of Visit <= 0.000808: HP (6.0)
+
+Rate of Visit <= 0.001295: HM (161.0/79.0)
+
+Rate of Visit <= 0.008908: HM (26.0/1.0)
+
+Total No > 77: HP (9.0/1.0)
+
+Total No > 58: HM (20.0/3.0)

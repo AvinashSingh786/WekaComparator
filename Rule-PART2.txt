@@ -1,0 +1,64 @@
+
+Flight Click beginning <= 142 AND
+Flight Click ending <= 142 AND
+Variance Movement Speed <= 11.901445 AND
+#Path > 50: user-2 (22.0)
+
+Flight Click beginning > 142: user-1 (18.0/2.0)
+
+Flight Click ending <= 142 AND
+Max ScrollDown Speed. > 2.909091: user-3 (12.0/1.0)
+
+Flight Click ending <= 142 AND
+Max Silent <= 113231 AND
+#Clicks > 1 AND
+#Silents <= 0: user-3 (4.0)
+
+Flight Click ending <= 142 AND
+#Silents > 0 AND
+Skewness ScrollDown Speed <= -0.020758 AND
+Mode Angle Incl. <= 155.556045: user-2 (33.0/1.0)
+
+Flight Click ending <= 142 AND
+Duration <= 19344 AND
+Max Angle Incl. > 14.036243: user-2 (24.0)
+
+#ScrollDown > 72: user-2 (6.0)
+
+Flight Click ending > 130 AND
+Flight Click ending <= 199: user-1 (4.0)
+
+Min Movement Speed > 0.000156: user-3 (7.0)
+
+Mean ScrollUp Speed <= 2.219354 AND
+Flight Click beginning <= 95 AND
+#Clicks > 0 AND
+Skewness Silent <= 124.553426 AND
+Direction Path <= -1 AND
+Duration <= 31070: user-3 (4.0)
+
+Flight Click ending <= 91 AND
+Flight Click ending <= 0 AND
+Direction Path > 0 AND
+Mode Angle Incl. > 25.016893: user-3 (9.0/1.0)
+
+Weight Path <= -19.667361: user-2 (10.0/1.0)
+
+Flight Click ending <= 91 AND
+Kurtosis Angle Incl. <= 1.444127 AND
+Direction Path <= -1: user-3 (6.0)
+
+Kurtosis ScrollDown Speed > -0.366321 AND
+#Scroll <= 0 AND
+Skewness Angle Incl. > -31.578543 AND
+Flight Click beginning <= 88 AND
+#Clicks <= 0 AND
+#Path > 13 AND
+#Path <= 21: user-3 (4.0/1.0)
+
+Kurtosis ScrollDown Speed > -0.366321 AND
+#Path <= 31: user-2 (12.0/3.0)
+
+: user-3 (4.0)
+
+Number of Rules  : 	16

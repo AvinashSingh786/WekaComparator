@@ -1,0 +1,1660 @@
+Rate of Visit > 0.091628 AND
+Rate of Visit Count per Session <= 0.115385: HP (101.0)
+
+Rate of Visit <= 0.000528 AND
+Rate of Visit <= 0.000108 AND
+Rate of Visit Count per Session <= 154.535433: HP (40.0)
+
+Rate of Visit <= 0.000528 AND
+Rate of Visit <= 0.000108 AND
+Rate of Visit > 0.000081 AND
+Total No <= 3: HP (10.0)
+
+Rate of Visit <= 0.000528 AND
+Total No > 12 AND
+Total No <= 15 AND
+Rate of Visit > 0.00043: HP (41.0)
+
+Rate of Visit <= 0.004714 AND
+Total No > 23 AND
+Total No > 110 AND
+Session Duration > 1921: VHP (27.0)
+
+Total No <= 36 AND
+Rate of Visit Count per Session <= 1.620237 AND
+Session Duration > 2184 AND
+Rate of Visit Count per Session > 0.533095 AND
+Rate of Visit Count per Session <= 1.490805: VHP (41.0/7.0)
+
+Rate of Visit Count per Session <= 1.615646 AND
+Session Duration <= 2731 AND
+Session Duration <= 102 AND
+Session Duration > -84790: HP (16.0/3.0)
+
+Rate of Visit Count per Session <= 1.603598 AND
+Session Duration <= 2731 AND
+Session Duration <= 306 AND
+Flight Skew > 170.024665: VHP (9.0)
+
+Rate of Visit Count per Session <= 1.603598 AND
+Session Duration <= 2731 AND
+Interval Kurt <= 8.108879 AND
+Flight Skew > 838.232717 AND
+Rate of Visit Count per Session > 0.277632 AND
+Total No > 8 AND
+Rate Visit per Session > 0.005336: HM (9.0)
+
+Rate of Visit Count per Session <= 1.603598 AND
+Session Duration <= 2731 AND
+Flight Kurt <= 6.960357 AND
+Flight Skew > 838.232717 AND
+Total No <= 8 AND
+Rate of Visit Count per Session > 0.272727 AND
+Rate of Visit > 0.005884: HM (12.0)
+
+Total No <= 36 AND
+Rate of Visit Count per Session <= 1.620237 AND
+Session Duration > 2300 AND
+Rate of Visit Count per Session <= 0.343667: HM (21.0/5.0)
+
+Total No <= 36 AND
+Rate of Visit Count per Session <= 1.620237 AND
+Session Duration > 2731 AND
+Rate of Visit > 0.004255 AND
+Flight Kurt <= 10.065697: VHP (9.0)
+
+Total No <= 36 AND
+Rate of Visit Count per Session <= 1.620237 AND
+Interval Kurt <= 8.108446 AND
+Flight Skew <= 869.591446: HM (308.0/153.0)
+
+Rate of Visit <= 0.000528 AND
+Total No <= 8 AND
+Rate of Visit > 0.00045 AND
+Total No > 3: HP (162.0/14.0)
+
+Total No <= 24 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit Count per Session <= 4.316517 AND
+Session Duration > 946 AND
+Flight SD <= 183.526969 AND
+Total No > 14 AND
+Rate of Visit > 0.002763 AND
+Total No <= 20: VHP (40.0/2.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.007531 AND
+Rate of Visit Count per Session <= 4.794856 AND
+Session Duration <= 3176 AND
+Session Duration > 936 AND
+Flight Skew > 233.781706 AND
+Rate of Visit Count per Session <= 3.865789 AND
+Rate of Visit Count per Session > 1.482286 AND
+Flight Skew <= 1254.763227 AND
+Session Duration > 1255 AND
+Session Duration <= 1813 AND
+Rate of Visit Count per Session > 1.935783 AND
+Rate of Visit Count per Session <= 3.259685: VHP (134.0/3.0)
+
+Total No <= 18 AND
+Rate of Visit <= 0.004685 AND
+Rate of Visit > 0.001223 AND
+Total No > 3 AND
+Rate of Visit > 0.002321 AND
+Total No > 10 AND
+Rate of Visit <= 0.004015 AND
+Total No <= 14 AND
+Rate of Visit > 0.002791 AND
+Total No > 11: VHP (70.0)
+
+Total No <= 11 AND
+Rate of Visit <= 0.003901 AND
+Rate of Visit > 0.000601 AND
+Rate of Visit > 0.000817 AND
+Rate of Visit > 0.002676 AND
+Total No > 5 AND
+Total No > 8 AND
+Rate of Visit <= 0.003013: VHP (35.0)
+
+Total No <= 11 AND
+Rate of Visit <= 0.003901 AND
+Rate of Visit > 0.000601 AND
+Rate of Visit > 0.000817 AND
+Rate of Visit > 0.002676 AND
+Rate of Visit <= 0.002756: HP (43.0)
+
+Total No <= 11 AND
+Rate of Visit <= 0.003901 AND
+Rate of Visit > 0.000601 AND
+Rate of Visit > 0.000817 AND
+Rate of Visit <= 0.002994 AND
+Rate of Visit > 0.002491 AND
+Total No > 6: VHP (28.0)
+
+Total No <= 10 AND
+Rate of Visit <= 0.003901 AND
+Rate of Visit > 0.000601 AND
+Total No <= 8 AND
+Rate of Visit Count per Session > 362.25 AND
+Total No <= 3: VHP (30.0/2.0)
+
+Total No <= 10 AND
+Rate of Visit <= 0.003901 AND
+Rate of Visit > 0.000732 AND
+Rate of Visit Count per Session > 315.76 AND
+Total No <= 5 AND
+Interval SD <= 3.072458 AND
+Rate Visit per Session <= 0.428571: VHP (19.0)
+
+Rate Visit per Session <= 0.009404 AND
+Total No <= 10 AND
+Rate of Visit > 0.000601 AND
+Rate of Visit <= 0.002222 AND
+Rate of Visit <= 0.002052 AND
+Total No <= 9 AND
+Flight Skew <= 1003.173347 AND
+Total No <= 8: VHP (262.0/81.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 18 AND
+Rate of Visit > 0.001223 AND
+Rate of Visit Count per Session > 122.166667 AND
+Total No > 10 AND
+Rate Visit per Session > 0.243902: HP (8.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 18 AND
+Rate of Visit > 0.001223 AND
+Rate of Visit Count per Session > 122.166667 AND
+Total No > 5 AND
+Rate of Visit Count per Session <= 180.404762 AND
+Session Duration > 23 AND
+Rate of Visit Count per Session <= 175.325 AND
+Flight Skew <= 6.21373: VHP (24.0)
+
+Total No <= 41 AND
+Rate of Visit <= 0.001616 AND
+Total No > 8 AND
+Rate of Visit <= 0.000363 AND
+Rate of Visit > 0.000306 AND
+Total No <= 11: HP (23.0)
+
+Total No <= 41 AND
+Rate of Visit <= 0.001616 AND
+Total No > 10 AND
+Session Duration > 2163 AND
+Rate of Visit Count per Session > 7.318737 AND
+Rate of Visit <= 0.001113 AND
+Session Duration > 3095: VHP (17.0)
+
+Total No <= 25 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit > 0.001616 AND
+Rate of Visit > 0.00442 AND
+Total No > 15: VHP (40.0/5.0)
+
+Total No <= 18 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit > 0.001223 AND
+Session Duration <= 16 AND
+Rate of Visit Count per Session <= 77.781818 AND
+Flight Skew > -1.184211 AND
+Rate of Visit > 0.003974: HM (15.0)
+
+Total No <= 18 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit > 0.001223 AND
+Interval Mean <= 4.230769 AND
+Rate of Visit <= 0.001721 AND
+Rate of Visit <= 0.001309: VHP (25.0/2.0)
+
+Total No <= 18 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit > 0.001361 AND
+Rate of Visit <= 0.001414 AND
+Total No <= 10: VHP (39.0)
+
+Total No <= 18 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit > 0.001616 AND
+Rate of Visit > 0.004463 AND
+Rate of Visit <= 0.004685 AND
+Rate of Visit > 0.004517 AND
+Total No <= 11: VHP (14.0)
+
+Total No <= 18 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit > 0.001463 AND
+Rate of Visit > 0.004463 AND
+Total No <= 13: HP (11.0)
+
+Total No <= 18 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit > 0.001616 AND
+Rate of Visit <= 0.003837 AND
+Session Duration <= 13 AND
+Rate of Visit > 0.002871: VHP (20.0)
+
+Total No > 18 AND
+Rate of Visit Count per Session > 15.875498 AND
+Session Duration > 1237 AND
+Rate of Visit Count per Session <= 22.499184 AND
+Session Duration > 1492 AND
+Rate of Visit Count per Session <= 18.521472 AND
+Session Duration <= 1798: HP (198.0)
+
+Total No <= 41 AND
+Rate of Visit Count per Session <= 0.717265 AND
+Total No > 8 AND
+Rate of Visit > 0.036913 AND
+Total No <= 24 AND
+Total No > 16: HP (14.0)
+
+Total No <= 41 AND
+Rate of Visit <= 0.001616 AND
+Total No > 8 AND
+Rate of Visit <= 0.000363: VHP (26.0)
+
+Total No <= 41 AND
+Rate of Visit <= 0.001463 AND
+Total No > 8 AND
+Total No > 34 AND
+Rate of Visit > 0.001155: HP (21.0)
+
+Total No <= 36 AND
+Session Duration > 3176 AND
+Rate of Visit Count per Session <= 5.095531 AND
+Flight SD <= 440.3543 AND
+Rate of Visit <= 0.005218 AND
+Rate of Visit <= 0.004696 AND
+Total No > 31: HP (12.0)
+
+Total No <= 36 AND
+Session Duration > 3179 AND
+Flight Skew > 913.693781 AND
+Flight Skew > 949.549321: HM (11.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.001463 AND
+Total No > 8 AND
+Rate of Visit > 0.00058 AND
+Total No <= 11 AND
+Rate of Visit <= 0.000953 AND
+Total No > 9 AND
+Rate of Visit > 0.000641: HP (70.0/3.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit > 0.001616 AND
+Total No <= 18 AND
+Total No > 4 AND
+Rate of Visit Count per Session > 114.064516 AND
+Rate Visit per Session <= 0.357143 AND
+Flight SD > 2.565801: HP (11.0)
+
+Total No <= 36 AND
+Rate of Visit Count per Session > 324.05 AND
+Rate of Visit > 0.000406 AND
+Total No > 4 AND
+Rate of Visit > 0.000557 AND
+Rate of Visit <= 0.000653: HP (17.0/1.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 18 AND
+Rate of Visit > 0.001616 AND
+Total No > 4 AND
+Rate of Visit > 0.004383 AND
+Rate of Visit <= 0.004685: VHP (28.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 18 AND
+Rate of Visit > 0.001463 AND
+Rate of Visit <= 0.003837 AND
+Rate of Visit > 0.003625 AND
+Rate of Visit <= 0.003797 AND
+Total No <= 5: VHP (32.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 18 AND
+Rate of Visit > 0.001463 AND
+Rate of Visit <= 0.003441 AND
+Total No <= 11 AND
+Rate of Visit > 0.002994 AND
+Rate of Visit <= 0.003233 AND
+Total No > 7: HP (16.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 18 AND
+Rate of Visit > 0.001463 AND
+Rate of Visit <= 0.003441 AND
+Rate of Visit > 0.002321 AND
+Total No > 7 AND
+Total No <= 10 AND
+Rate of Visit <= 0.003343: VHP (26.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 18 AND
+Rate of Visit > 0.001463 AND
+Rate of Visit <= 0.003441 AND
+Rate of Visit > 0.002438 AND
+Total No > 10 AND
+Rate of Visit > 0.002461 AND
+Total No <= 15 AND
+Session Duration <= 1464: VHP (75.0/9.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 9 AND
+Rate of Visit > 0.000467 AND
+Rate of Visit > 0.003431 AND
+Total No <= 8 AND
+Rate of Visit > 0.003528 AND
+Total No <= 6 AND
+Flight Kurt > 1.575625 AND
+Rate of Visit > 0.00385: HM (16.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 9 AND
+Rate of Visit > 0.000601 AND
+Rate of Visit > 0.003431 AND
+Total No <= 8 AND
+Rate of Visit > 0.003574: HP (34.0/3.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 9 AND
+Rate of Visit > 0.000601 AND
+Rate of Visit Count per Session > 325 AND
+Total No > 3 AND
+Rate of Visit > 0.000627 AND
+Total No > 5 AND
+Rate of Visit > 0.000675 AND
+Rate of Visit <= 0.000817: HP (18.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 9 AND
+Rate of Visit > 0.000601 AND
+Rate of Visit <= 0.002555 AND
+Rate of Visit Count per Session > 362.25 AND
+Rate of Visit > 0.000627 AND
+Rate of Visit <= 0.000679 AND
+Total No <= 5: HP (19.0/1.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 9 AND
+Rate of Visit > 0.000601 AND
+Rate of Visit <= 0.002555 AND
+Rate of Visit > 0.001047 AND
+Rate of Visit <= 0.001123 AND
+Total No <= 7: VHP (102.0/10.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.001463 AND
+Total No > 9 AND
+Rate of Visit > 0.000725 AND
+Session Duration > 1868 AND
+Rate Visit per Session > 0.00813: HM (21.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.001463 AND
+Total No > 9 AND
+Rate of Visit > 0.000725 AND
+Total No <= 15 AND
+Rate of Visit <= 0.001051 AND
+Rate of Visit > 0.000773 AND
+Total No <= 12: HP (27.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit > 0.001616 AND
+Total No <= 24 AND
+Total No <= 12 AND
+Rate of Visit <= 0.003001 AND
+Total No > 6 AND
+Rate of Visit > 0.001684 AND
+Total No <= 8 AND
+Rate of Visit <= 0.002342: VHP (59.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 4 AND
+Rate of Visit > 0.000406 AND
+Rate of Visit <= 0.001707 AND
+Rate of Visit > 0.00097 AND
+Rate of Visit > 0.001606: VHP (30.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit Count per Session <= 5.068271 AND
+Flight SD <= 113.884035 AND
+Flight Kurt <= 8.768484 AND
+Flight Kurt <= 7.694777: VHP (26.0/6.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit Count per Session <= 5.068271 AND
+Session Duration > 2918 AND
+Session Duration <= 3864 AND
+Flight Kurt <= 8.520359: HP (11.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit Count per Session <= 5.068271 AND
+Rate of Visit Count per Session > 3.865789 AND
+Session Duration > 1527 AND
+Rate of Visit Count per Session > 4.316517 AND
+Rate of Visit <= 0.004012 AND
+Rate of Visit > 0.000953 AND
+Rate of Visit Count per Session <= 5.045682 AND
+Rate of Visit Count per Session > 4.59471: HP (61.0)
+
+Total No <= 41 AND
+Rate of Visit <= 0.000528 AND
+Rate of Visit > 0.000491 AND
+Total No > 6 AND
+Total No <= 15: HM (41.0/15.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit Count per Session <= 5.068271 AND
+Rate of Visit Count per Session > 3.580362 AND
+Session Duration > 1527 AND
+Session Duration > 1802 AND
+Flight Kurt > 8.336841: HP (12.0)
+
+Total No <= 36 AND
+Session Duration > 2285 AND
+Rate of Visit Count per Session <= 2.05716 AND
+Session Duration <= 3237: VHP (46.0/12.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit Count per Session <= 5.068271 AND
+Rate of Visit Count per Session > 3.580362 AND
+Session Duration > 1527 AND
+Session Duration <= 1798 AND
+Rate of Visit Count per Session > 4.316517 AND
+Rate of Visit Count per Session <= 4.482068 AND
+Total No <= 30 AND
+Session Duration > 1598 AND
+Session Duration > 1677: HP (17.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit Count per Session <= 5.056951 AND
+Rate of Visit Count per Session > 3.541304 AND
+Session Duration > 1527 AND
+Session Duration <= 1798: VHP (179.0/82.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004714 AND
+Total No > 19 AND
+Rate of Visit Count per Session > 8.944444 AND
+Rate of Visit <= 0.000823 AND
+Rate of Visit > 0.000662 AND
+Total No <= 26: HP (26.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit <= 0.000525 AND
+Flight Kurt > 7.304391 AND
+Total No <= 14: HP (16.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit Count per Session <= 6.119595 AND
+Rate of Visit Count per Session <= 2.758364 AND
+Rate of Visit Count per Session > 2.199618: HP (12.0/1.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit Count per Session <= 7.605932 AND
+Session Duration <= 501 AND
+Rate of Visit Count per Session > 5.242402: HP (24.0/6.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004714 AND
+Rate of Visit Count per Session <= 7.605932 AND
+Flight Skew <= 286.715286 AND
+Total No <= 34 AND
+Flight SD <= 220.679761 AND
+Rate of Visit > 0.001361: VHP (131.0/51.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004475 AND
+Rate of Visit Count per Session <= 5.697064 AND
+Session Duration <= 1380 AND
+Flight Skew > 294.653357 AND
+Total No > 8 AND
+Flight Skew <= 474.278798 AND
+Session Duration > 1142: VHP (23.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004475 AND
+Total No > 12 AND
+Rate of Visit <= 0.001414 AND
+Rate of Visit Count per Session <= 13.056243 AND
+Total No <= 21 AND
+Rate of Visit Count per Session <= 11.444166: HP (25.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004475 AND
+Total No > 18 AND
+Rate of Visit <= 0.002625 AND
+Rate of Visit Count per Session <= 12.064103 AND
+Rate of Visit Count per Session > 8.634822 AND
+Rate of Visit <= 0.002179: HP (42.0/1.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004475 AND
+Total No <= 12 AND
+Rate of Visit > 0.000528 AND
+Rate of Visit > 0.003001 AND
+Total No > 8 AND
+Rate of Visit <= 0.004296 AND
+Flight Kurt <= 6.464073: HP (26.0/1.0)
+
+Session Duration <= 1484 AND
+Rate of Visit <= 0.004714 AND
+Total No > 12 AND
+Rate of Visit <= 0.001485 AND
+Rate of Visit <= 0.000655 AND
+Total No > 15 AND
+Rate of Visit > 0.000551 AND
+Total No <= 19: HP (36.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004475 AND
+Total No > 18 AND
+Rate of Visit <= 0.002419 AND
+Rate of Visit <= 0.000953 AND
+Total No <= 28 AND
+Total No > 23: HP (16.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.000525 AND
+Flight Kurt > 6.10993 AND
+Total No <= 13 AND
+Total No <= 10 AND
+Rate of Visit > 0.0003 AND
+Flight Kurt > 6.133073: HM (22.0/4.0)
+
+Session Duration <= 1484 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 12 AND
+Rate of Visit > 0.000528 AND
+Total No <= 4 AND
+Rate of Visit <= 0.00097 AND
+Rate of Visit > 0.00069: VHP (102.0/3.0)
+
+Session Duration <= 1484 AND
+Rate of Visit Count per Session <= 10.840121 AND
+Session Duration > 358 AND
+Rate of Visit Count per Session > 2.562092 AND
+Rate of Visit > 0.004769 AND
+Total No > 17 AND
+Total No <= 44 AND
+Rate of Visit <= 0.008445 AND
+Total No <= 22 AND
+Rate of Visit <= 0.006194: VHP (21.0)
+
+Session Duration <= 1484 AND
+Rate of Visit <= 0.004714 AND
+Total No > 18 AND
+Rate of Visit <= 0.002419 AND
+Rate of Visit > 0.000953 AND
+Rate of Visit <= 0.001032 AND
+Total No <= 26: HM (27.0/1.0)
+
+Session Duration <= 1484 AND
+Rate of Visit <= 0.004714 AND
+Total No > 25 AND
+Rate of Visit <= 0.001225 AND
+Total No <= 33 AND
+Rate of Visit > 0.00091: HP (31.0/1.0)
+
+Session Duration <= 1484 AND
+Rate of Visit <= 0.004714 AND
+Total No > 31 AND
+Rate of Visit > 0.002016 AND
+Flight Kurt <= 10.350158 AND
+Rate of Visit Count per Session <= 21.381098 AND
+Rate of Visit <= 0.003766: HP (42.0/1.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004475 AND
+Rate of Visit > 0.001463 AND
+Total No <= 19 AND
+Total No <= 11 AND
+Total No > 5 AND
+Rate of Visit <= 0.001555 AND
+Total No <= 9 AND
+Rate of Visit <= 0.001506: VHP (32.0/9.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004475 AND
+Rate of Visit > 0.001616 AND
+Total No <= 24 AND
+Rate of Visit > 0.003303 AND
+Total No > 13 AND
+Total No <= 18: VHP (35.0/3.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004475 AND
+Total No <= 12 AND
+Rate of Visit > 0.000528 AND
+Rate of Visit > 0.001616 AND
+Rate of Visit <= 0.001684 AND
+Total No > 6: VHP (40.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004475 AND
+Total No <= 11 AND
+Rate of Visit > 0.000528 AND
+Rate of Visit > 0.001825 AND
+Total No > 7 AND
+Rate of Visit <= 0.003676 AND
+Rate of Visit > 0.00189: VHP (112.0/16.0)
+
+Session Duration <= 1484 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 6 AND
+Rate of Visit <= 0.000406 AND
+Rate of Visit > 0.000331 AND
+Total No <= 5: HP (51.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.000363 AND
+Rate of Visit > 0.000218 AND
+Total No <= 5 AND
+Total No > 3 AND
+Rate of Visit > 0.000271 AND
+Total No > 4 AND
+Rate of Visit Count per Session <= 672.142857: HP (49.0/5.0)
+
+Session Duration <= 1542 AND
+Rate Visit per Session <= 0.00438 AND
+Rate of Visit Count per Session > 18.348105 AND
+Flight Kurt > 2.333282 AND
+Rate of Visit Count per Session > 20.316614: VHP (6.0)
+
+Rate of Visit <= 0.000317 AND
+Total No > 7 AND
+Rate of Visit > 0.000246: HP (15.0)
+
+Total No <= 3 AND
+Rate of Visit <= 0.000163 AND
+Rate of Visit > 0.000105: HM (36.0/11.0)
+
+Rate of Visit <= 0.00015 AND
+Rate of Visit > 0.000108 AND
+Total No <= 4: HP (27.0)
+
+Total No <= 3 AND
+Rate of Visit <= 0.0003 AND
+Rate of Visit > 0.000127: HP (65.0/10.0)
+
+Total No <= 3 AND
+Rate of Visit <= 0.00108 AND
+Rate of Visit <= 0.000357 AND
+Rate of Visit > 0.000204 AND
+Rate Visit per Session > 0.021764: HM (27.0/8.0)
+
+Total No <= 3 AND
+Rate of Visit <= 0.00108 AND
+Rate of Visit > 0.000491 AND
+Rate of Visit > 0.000528 AND
+Rate of Visit <= 0.000817: VHP (53.0/5.0)
+
+Total No <= 3 AND
+Rate of Visit <= 0.000491 AND
+Rate of Visit <= 0.000357: VHP (19.0/2.0)
+
+Rate of Visit <= 0.000363 AND
+Total No > 7 AND
+Rate of Visit <= 0.000277: VHP (10.0)
+
+Rate of Visit <= 0.000363 AND
+Rate of Visit > 0.000329 AND
+Total No <= 7 AND
+Flight Skew <= 81.232813: HM (21.0/4.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.005564 AND
+Rate of Visit <= 0.000363 AND
+Rate of Visit > 0.00015 AND
+Rate of Visit > 0.000329 AND
+Total No <= 7 AND
+Flight Skew <= 473.869303: VHP (16.0/4.0)
+
+Rate of Visit <= 0.000363 AND
+Rate of Visit > 0.000218 AND
+Total No <= 4: HP (77.0/22.0)
+
+Rate of Visit <= 0.000363 AND
+Total No <= 4 AND
+Interval Kurt > 2.330447: VHP (19.0/1.0)
+
+Rate of Visit <= 0.000363 AND
+Rate of Visit > 0.000271 AND
+Total No > 6: HM (23.0)
+
+Rate Visit per Session > 0.384615 AND
+Rate Visit per Session <= 0.444444 AND
+Flight Skew > -1.042683: VHP (15.0/2.0)
+
+Rate of Visit <= 0.00034 AND
+Rate of Visit > 0.00015 AND
+Total No > 6 AND
+Rate of Visit > 0.000218: HP (14.0)
+
+Rate of Visit <= 0.00034 AND
+Rate of Visit > 0.000218 AND
+Rate of Visit <= 0.000277: HM (42.0/7.0)
+
+Session Duration <= 1484 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 6 AND
+Rate of Visit > 0.000385 AND
+Rate of Visit <= 0.002555 AND
+Total No > 5 AND
+Rate of Visit > 0.000601 AND
+Rate of Visit <= 0.002409 AND
+Rate of Visit <= 0.002008 AND
+Rate of Visit > 0.000994 AND
+Rate of Visit > 0.001131: VHP (52.0/7.0)
+
+Session Duration <= 1484 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 5 AND
+Rate of Visit > 0.000368 AND
+Rate of Visit <= 0.001671 AND
+Rate of Visit > 0.000887 AND
+Total No > 4: VHP (60.0)
+
+Session Duration <= 1483 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 4 AND
+Rate of Visit <= 0.000306 AND
+Rate of Visit > 0.00014 AND
+Rate of Visit > 0.000184 AND
+Flight Kurt <= 1.910767: HM (13.0/1.0)
+
+Session Duration <= 1483 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 4 AND
+Rate of Visit <= 0.000306 AND
+Rate of Visit > 0.00014 AND
+Rate of Visit > 0.000184 AND
+Flight Skew <= 5.785714: VHP (10.0/1.0)
+
+Session Duration <= 1483 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 4 AND
+Rate of Visit <= 0.000306 AND
+Rate of Visit > 0.00014: HM (12.0/1.0)
+
+Rate of Visit <= 0.000196 AND
+Rate of Visit > 0.000163 AND
+Total No <= 6: HP (22.0)
+
+Flight SD <= 1.607275 AND
+Rate of Visit > 0.00084: HP (17.0/1.0)
+
+Session Duration <= 1483 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 4 AND
+Rate of Visit <= 0.000664 AND
+Rate of Visit > 0.000596 AND
+Rate of Visit > 0.000627 AND
+Flight Kurt > 1.839089: HP (14.0/6.0)
+
+Session Duration <= 1483 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 4 AND
+Rate of Visit <= 0.000658 AND
+Rate of Visit <= 0.000596 AND
+Rate of Visit <= 0.000491 AND
+Total No > 3: VHP (34.0/9.0)
+
+Session Duration <= 1483 AND
+Rate of Visit <= 0.005492 AND
+Rate of Visit > 0.004956 AND
+Total No <= 6 AND
+Total No <= 4: HP (11.0)
+
+Session Duration <= 1483 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 4 AND
+Rate of Visit <= 0.000491 AND
+Rate of Visit > 0.000442 AND
+Rate of Visit > 0.000467 AND
+Rate Visit per Session <= 0.315789 AND
+Rate Visit per Session > 0.00865: VHP (19.0/3.0)
+
+Session Duration <= 1483 AND
+Rate of Visit <= 0.004714 AND
+Session Duration <= 36 AND
+Rate of Visit <= 0.000385 AND
+Rate of Visit > 0.0002 AND
+Total No <= 5: HM (10.0/1.0)
+
+Session Duration <= 1483 AND
+Rate of Visit <= 0.004714 AND
+Session Duration <= 36 AND
+Rate of Visit > 0.002043 AND
+Rate of Visit <= 0.002228 AND
+Flight Kurt <= 2.039792: VHP (20.0/1.0)
+
+Session Duration <= 1483 AND
+Rate of Visit <= 0.004714 AND
+Session Duration <= 36 AND
+Rate of Visit > 0.002365 AND
+Rate of Visit <= 0.003036 AND
+Total No > 3 AND
+Interval Mean > 2.833333: VHP (14.0)
+
+Session Duration <= 1483 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 8 AND
+Rate of Visit > 0.001496 AND
+Rate of Visit <= 0.002043 AND
+Total No > 4: HP (35.0)
+
+Session Duration <= 1483 AND
+Flight Skew > 3.11831 AND
+Rate of Visit <= 0.001684 AND
+Total No <= 10 AND
+Total No > 9 AND
+Rate of Visit > 0.001491 AND
+Rate of Visit > 0.001602: HP (10.0)
+
+Session Duration <= 1483 AND
+Flight Skew > 3.11831 AND
+Total No <= 22 AND
+Rate of Visit > 0.007351 AND
+Rate of Visit > 0.025276 AND
+Total No > 10 AND
+Session Duration <= 1302: HP (40.0/9.0)
+
+Rate of Visit <= 0.005055 AND
+Session Duration > 1546 AND
+Rate of Visit Count per Session > 10.531395 AND
+Rate of Visit Count per Session > 15.86734 AND
+Rate of Visit Count per Session <= 18.4 AND
+Session Duration <= 1943: HP (20.0)
+
+Session Duration <= 1541 AND
+Rate of Visit <= 0.005067 AND
+Rate of Visit > 0.004457 AND
+Total No <= 11 AND
+Rate of Visit > 0.004731 AND
+Total No > 3 AND
+Rate of Visit <= 0.00475: HP (41.0)
+
+Session Duration <= 1541 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 8 AND
+Rate of Visit > 0.002555 AND
+Rate of Visit > 0.002871 AND
+Rate of Visit <= 0.003448 AND
+Rate of Visit <= 0.003353 AND
+Rate of Visit > 0.003074: HP (13.0/1.0)
+
+Session Duration <= 1541 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 5 AND
+Rate of Visit > 0.002139 AND
+Flight Skew <= 50.176951 AND
+Total No > 4 AND
+Rate of Visit <= 0.002208: HM (9.0)
+
+Session Duration <= 1541 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 5 AND
+Rate of Visit > 0.000801 AND
+Rate of Visit > 0.002314 AND
+Flight Skew <= 50.176951 AND
+Rate of Visit > 0.003448: HM (11.0/1.0)
+
+Session Duration <= 1541 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 5 AND
+Rate of Visit > 0.000801 AND
+Rate of Visit <= 0.000926 AND
+Rate of Visit <= 0.00083: HP (15.0)
+
+Session Duration <= 1541 AND
+Rate of Visit <= 0.004714 AND
+Total No <= 5 AND
+Rate of Visit > 0.000926 AND
+Rate of Visit <= 0.001636 AND
+Flight Kurt > 1.445916 AND
+Flight Kurt <= 2.283825 AND
+Rate of Visit > 0.00108 AND
+Total No > 3 AND
+Rate of Visit > 0.001262: HP (23.0/4.0)
+
+Total No <= 5 AND
+Rate of Visit > 0.002314 AND
+Rate of Visit <= 0.010421 AND
+Rate of Visit <= 0.006335 AND
+Total No <= 4 AND
+Rate of Visit > 0.004064 AND
+Rate of Visit <= 0.005656: HM (70.0/1.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.005844 AND
+Rate of Visit > 0.004956 AND
+Total No > 4 AND
+Rate of Visit <= 0.005067 AND
+Total No > 12 AND
+Rate of Visit > 0.005019: HP (12.0/1.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.005844 AND
+Rate of Visit > 0.004956 AND
+Total No <= 4: HP (8.0)
+
+Session Duration <= 1542 AND
+Rate of Visit <= 0.004739 AND
+Total No <= 5 AND
+Total No <= 3 AND
+Rate of Visit <= 0.000467: VHP (92.0/38.0)
+
+Session Duration <= 1541 AND
+Total No > 5 AND
+Rate of Visit <= 0.001684 AND
+Rate of Visit <= 0.000255 AND
+Rate of Visit > 0.0002: HP (25.0)
+
+Rate of Visit <= 0.00034 AND
+Rate of Visit > 0.000196 AND
+Total No > 5 AND
+Rate Visit per Session > 0.015221 AND
+Flight Kurt > 1.509148: HM (19.0/1.0)
+
+Rate of Visit <= 0.00034 AND
+Rate of Visit > 0.000196 AND
+Total No > 5: VHP (25.0/8.0)
+
+Session Duration <= 1542 AND
+Total No > 5 AND
+Rate of Visit <= 0.001684 AND
+Total No <= 10 AND
+Rate of Visit <= 0.000817 AND
+Rate of Visit > 0.000417 AND
+Rate of Visit <= 0.000639 AND
+Total No > 6 AND
+Rate of Visit > 0.000502 AND
+Rate of Visit <= 0.000617: HP (50.0/6.0)
+
+Session Duration <= 1484 AND
+Total No > 5 AND
+Rate of Visit <= 0.001485 AND
+Total No > 9 AND
+Total No > 23 AND
+Rate of Visit > 0.001206 AND
+Total No <= 39 AND
+Session Duration > 251: HM (43.0/4.0)
+
+Session Duration <= 1484 AND
+Total No > 5 AND
+Rate of Visit <= 0.001684 AND
+Rate of Visit > 0.000901 AND
+Flight Skew <= -0.491228 AND
+Rate Visit per Session > 0.115385: HM (13.0)
+
+Session Duration <= 1484 AND
+Total No > 5 AND
+Rate of Visit <= 0.001684 AND
+Rate of Visit > 0.000901 AND
+Total No > 9 AND
+Total No > 27 AND
+Total No > 41 AND
+Rate of Visit > 0.001361: HP (8.0)
+
+Session Duration <= 1484 AND
+Total No > 5 AND
+Rate of Visit <= 0.001684 AND
+Total No > 27 AND
+Rate of Visit <= 0.001506: VHP (17.0)
+
+Session Duration <= 1484 AND
+Total No > 5 AND
+Rate of Visit <= 0.001506 AND
+Total No > 9 AND
+Rate of Visit > 0.000901 AND
+Total No <= 20 AND
+Total No > 13 AND
+Rate of Visit > 0.000953 AND
+Total No <= 15: HP (27.0)
+
+Session Duration <= 1484 AND
+Total No > 5 AND
+Rate of Visit <= 0.001506 AND
+Total No > 9 AND
+Rate of Visit > 0.001131 AND
+Total No <= 10 AND
+Rate of Visit <= 0.001435: HP (47.0)
+
+Session Duration <= 1542 AND
+Total No > 5 AND
+Rate of Visit <= 0.001223 AND
+Total No <= 9 AND
+Rate of Visit > 0.000385 AND
+Total No <= 6 AND
+Rate of Visit <= 0.000601: HP (51.0)
+
+Total No > 217 AND
+Rate of Visit <= 0.00995: VHP (27.0/1.0)
+
+Session Duration > 1544 AND
+Rate of Visit Count per Session > 10.531395 AND
+Rate of Visit Count per Session <= 11.103093 AND
+Session Duration <= 2788: HM (62.0)
+
+Rate of Visit <= 0.000901 AND
+Total No > 13 AND
+Rate of Visit <= 0.00058: VHP (25.0)
+
+Rate of Visit <= 0.000901 AND
+Interval Kurt > 8.067197 AND
+Total No <= 17 AND
+Rate of Visit <= 0.000725 AND
+Rate of Visit > 0.000655: HM (22.0/1.0)
+
+Rate of Visit Count per Session <= 8.850575 AND
+Rate of Visit Count per Session > 7.636594 AND
+Session Duration > 1269 AND
+Session Duration <= 2186: HP (175.0)
+
+Session Duration > 1541 AND
+Rate of Visit Count per Session > 10.555375 AND
+Session Duration > 1767 AND
+Rate of Visit Count per Session <= 11.710723: VHP (60.0/1.0)
+
+Session Duration > 1544 AND
+Rate of Visit Count per Session > 10.813456 AND
+Rate of Visit Count per Session > 11.30644 AND
+Session Duration > 1730 AND
+Rate of Visit Count per Session <= 11.830018: VHP (39.0/1.0)
+
+Session Duration > 1544 AND
+Rate of Visit Count per Session > 5.068271 AND
+Rate of Visit Count per Session > 11.543039 AND
+Session Duration <= 1966 AND
+Flight Kurt > 16.747963 AND
+Total No <= 62: HM (46.0/9.0)
+
+Session Duration > 1544 AND
+Rate of Visit Count per Session > 5.068271 AND
+Rate of Visit Count per Session > 11.543039 AND
+Session Duration > 1685: VHP (35.0/3.0)
+
+Session Duration > 1544 AND
+Rate of Visit Count per Session > 5.068271 AND
+Rate of Visit Count per Session > 11.859472 AND
+Session Duration <= 1655 AND
+Rate of Visit Count per Session > 12.090909 AND
+Session Duration <= 1606 AND
+Rate of Visit Count per Session > 12.532567 AND
+Total No <= 37: VHP (15.0/3.0)
+
+Session Duration > 1544 AND
+Rate of Visit Count per Session > 5.068271 AND
+Session Duration > 4095 AND
+Rate of Visit Count per Session > 5.600858: VHP (16.0)
+
+Session Duration > 1544 AND
+Rate of Visit Count per Session > 5.068271 AND
+Rate of Visit Count per Session > 10.813456 AND
+Rate of Visit Count per Session <= 11.859472: HM (50.0)
+
+Session Duration > 1544 AND
+Rate of Visit Count per Session > 5.068271 AND
+Rate of Visit Count per Session > 11.195876 AND
+Session Duration <= 1606: HM (14.0)
+
+Session Duration > 1686 AND
+Rate of Visit Count per Session > 5.068271 AND
+Rate of Visit Count per Session > 5.400237 AND
+Session Duration > 3002 AND
+Rate of Visit Count per Session <= 8.762172: HM (33.0/1.0)
+
+Total No > 56 AND
+Rate of Visit <= 0.008593 AND
+Total No > 141 AND
+Rate of Visit > 0.005809 AND
+Flight Skew > 91.10123: HM (24.0)
+
+Rate of Visit <= 0.00058 AND
+Rate of Visit <= 0.0002: VHP (16.0)
+
+Rate of Visit <= 0.000528 AND
+Total No <= 7 AND
+Rate of Visit <= 0.000491 AND
+Total No > 4 AND
+Flight Kurt <= 4.192191 AND
+Total No > 5 AND
+Total No <= 6 AND
+Flight Skew > -0.487952: HM (19.0/4.0)
+
+Total No > 56 AND
+Rate of Visit <= 0.007157 AND
+Total No > 117 AND
+Total No <= 147 AND
+Rate Visit per Session <= 0.065395: HM (16.0)
+
+Total No <= 5 AND
+Rate of Visit > 0.00577 AND
+Rate of Visit <= 0.01012 AND
+Rate of Visit > 0.00591 AND
+Total No > 3 AND
+Rate of Visit > 0.006928 AND
+Rate of Visit <= 0.008393: HM (56.0/1.0)
+
+Rate of Visit <= 0.004834 AND
+Session Duration > 1703 AND
+Rate of Visit Count per Session > 7.705028 AND
+Session Duration > 1725: HM (80.0/3.0)
+
+Total No > 92 AND
+Rate of Visit Count per Session <= 1.093131 AND
+Flight SD <= 170.695899 AND
+Flight Mean <= 39.285714 AND
+Flight Kurt > 53.545305: VHP (6.0)
+
+Total No > 92 AND
+Rate of Visit <= 0.017045 AND
+Total No <= 394 AND
+Total No > 228 AND
+Rate of Visit <= 0.014831: HM (18.0/1.0)
+
+Total No > 115 AND
+Rate of Visit <= 0.006412: VHP (10.0/1.0)
+
+Total No > 115 AND
+Rate of Visit Count per Session > 8.225986 AND
+Rate Visit per Session <= 0.101695: HM (9.0)
+
+Total No > 115 AND
+Total No <= 344 AND
+Rate of Visit <= 0.026222 AND
+Total No <= 198 AND
+Session Duration > 1794 AND
+Rate of Visit <= 0.017857: HP (47.0)
+
+Rate of Visit <= 0.004739 AND
+Session Duration > 2863 AND
+Session Duration <= 7191 AND
+Total No <= 78 AND
+Rate of Visit > 0.003343: HP (34.0/4.0)
+
+Rate of Visit Count per Session <= 4.784953 AND
+Total No <= 7 AND
+Flight Kurt > 4.068588 AND
+Rate of Visit <= 0.015798 AND
+Rate of Visit > 0.008115: HM (22.0/3.0)
+
+Rate of Visit Count per Session <= 4.784953 AND
+Session Duration > 1050 AND
+Flight Skew <= 231.76935 AND
+Rate of Visit Count per Session > 2.43797 AND
+Rate of Visit Count per Session <= 3.906964: VHP (60.0/13.0)
+
+Rate of Visit <= 0.000528 AND
+Rate of Visit <= 0.000491 AND
+Total No <= 7 AND
+Rate of Visit > 0.00029 AND
+Total No <= 6: HP (16.0/1.0)
+
+Rate of Visit <= 0.00058 AND
+Total No > 11 AND
+Total No <= 12: HP (9.0)
+
+Rate of Visit <= 0.00058 AND
+Total No > 7 AND
+Rate of Visit <= 0.000393 AND
+Total No > 10: HP (5.0)
+
+Rate of Visit <= 0.00058 AND
+Total No > 7 AND
+Rate Visit per Session > 0.005311 AND
+Total No > 10 AND
+Rate Visit per Session > 0.023889: HM (15.0)
+
+Rate of Visit <= 0.000417 AND
+Rate of Visit > 0.000385 AND
+Flight Kurt <= 6.065798 AND
+Rate Visit per Session > 0.005311: HM (15.0/5.0)
+
+Rate of Visit <= 0.00058 AND
+Rate of Visit > 0.000385 AND
+Rate of Visit > 0.000408 AND
+Total No > 8 AND
+Flight Mean <= 147.909091 AND
+Rate of Visit <= 0.000509 AND
+Rate Visit per Session <= 0.077273: HM (10.0/2.0)
+
+Rate Visit per Session <= 0.009804 AND
+Total No > 56 AND
+Total No <= 68 AND
+Total No <= 65: HM (8.0/2.0)
+
+Rate Visit per Session <= 0.009804 AND
+Flight SD <= 239.479488: HM (104.0/55.0)
+
+Rate of Visit <= 0.002438 AND
+Total No > 17 AND
+Rate of Visit <= 0.001131 AND
+Rate of Visit > 0.000715 AND
+Rate of Visit > 0.001113: HM (19.0/1.0)
+
+Rate of Visit <= 0.002438 AND
+Total No > 17 AND
+Rate of Visit <= 0.001085 AND
+Rate of Visit > 0.000715 AND
+Total No > 19: HM (17.0/2.0)
+
+Rate of Visit <= 0.002438 AND
+Total No > 17 AND
+Rate of Visit > 0.001157 AND
+Total No <= 29 AND
+Rate of Visit <= 0.001964 AND
+Rate of Visit > 0.001283 AND
+Total No > 20 AND
+Total No <= 27 AND
+Rate of Visit > 0.001506 AND
+Total No <= 25: HP (38.0)
+
+Rate of Visit <= 0.002438 AND
+Total No > 15 AND
+Rate of Visit <= 0.000953 AND
+Rate of Visit > 0.000715 AND
+Rate of Visit <= 0.000935 AND
+Session Duration > 1324 AND
+Flight SD <= 290.419847: VHP (10.0)
+
+Rate of Visit <= 0.002438 AND
+Total No > 15 AND
+Rate of Visit <= 0.000953 AND
+Rate of Visit > 0.000715 AND
+Rate of Visit <= 0.000935 AND
+Rate of Visit <= 0.000901 AND
+Rate of Visit <= 0.000883 AND
+Rate of Visit <= 0.000859 AND
+Rate of Visit <= 0.000832 AND
+Rate Visit per Session <= 0.052147: HM (19.0/1.0)
+
+Rate of Visit <= 0.002438 AND
+Total No > 16 AND
+Rate of Visit <= 0.000998 AND
+Rate of Visit > 0.000753 AND
+Total No <= 18 AND
+Rate of Visit > 0.000859 AND
+Total No <= 17: HM (15.0)
+
+Rate of Visit <= 0.002438 AND
+Total No > 17 AND
+Total No <= 29 AND
+Rate of Visit > 0.001157 AND
+Rate of Visit <= 0.001964 AND
+Total No <= 22 AND
+Total No > 18 AND
+Rate of Visit <= 0.001384 AND
+Total No <= 21 AND
+Rate of Visit > 0.00126: HP (23.0/1.0)
+
+Rate of Visit <= 0.002438 AND
+Total No > 17 AND
+Rate of Visit > 0.001157 AND
+Total No <= 29 AND
+Rate of Visit <= 0.001964 AND
+Total No <= 22 AND
+Rate of Visit > 0.001384: HP (19.0)
+
+Rate of Visit <= 0.00058 AND
+Rate of Visit > 0.000385 AND
+Rate of Visit > 0.000408 AND
+Total No > 3 AND
+Total No > 10: HM (20.0/8.0)
+
+Rate of Visit <= 0.002438 AND
+Total No > 17 AND
+Total No > 55 AND
+Total No <= 73: HP (13.0)
+
+Rate of Visit <= 0.001414 AND
+Rate of Visit > 0.001334 AND
+Rate of Visit > 0.001393: HP (15.0)
+
+Interval Kurt > 63.342768 AND
+Rate Visit per Session > 0.079646: HP (14.0/1.0)
+
+Rate of Visit <= 0.001309 AND
+Total No > 9 AND
+Rate of Visit <= 0.000617: HM (33.0/13.0)
+
+Rate of Visit <= 0.001309 AND
+Total No > 9 AND
+Total No > 19 AND
+Rate of Visit > 0.00116 AND
+Total No <= 23: HM (7.0)
+
+Rate of Visit <= 0.001309 AND
+Total No > 11 AND
+Total No > 20 AND
+Total No <= 24: VHP (11.0)
+
+Rate of Visit <= 0.001309 AND
+Total No > 11 AND
+Rate of Visit > 0.000953 AND
+Rate of Visit > 0.001088 AND
+Total No <= 18: HP (48.0)
+
+Rate of Visit <= 0.001177 AND
+Rate of Visit > 0.001123 AND
+Total No <= 7: HP (25.0)
+
+Session Duration <= 16 AND
+Rate of Visit Count per Session <= 28.343373 AND
+Rate of Visit > 0.007899 AND
+Session Duration > 8 AND
+Total No > 3 AND
+Interval Skew > -0.623288: VHP (10.0)
+
+Session Duration <= 16 AND
+Flight SD > 1.607275 AND
+Rate of Visit > 0.001543 AND
+Rate of Visit <= 0.006335: HM (47.0/2.0)
+
+Total No <= 41 AND
+Rate of Visit > 0.011113 AND
+Total No <= 4 AND
+Session Duration > 13 AND
+Rate of Visit > 0.013793 AND
+Rate of Visit > 0.014493 AND
+Rate of Visit <= 0.016862: HP (10.0)
+
+Total No <= 41 AND
+Rate of Visit > 0.011113 AND
+Flight Mean > 45.277778 AND
+Flight SD <= 356.029063 AND
+Total No > 18 AND
+Rate Visit per Session <= 0.0141: HP (15.0/1.0)
+
+Total No <= 41 AND
+Rate of Visit <= 0.008766 AND
+Session Duration > 1574 AND
+Rate of Visit Count per Session > 5.75814 AND
+Rate of Visit Count per Session <= 10.998445 AND
+Rate of Visit Count per Session <= 9.323061 AND
+Session Duration <= 2724: HP (30.0/1.0)
+
+Session Duration <= 1588 AND
+Interval SD > 123.447722 AND
+Interval Kurt > 18.352717 AND
+Rate of Visit <= 0.002438 AND
+Flight Skew > 721.866153 AND
+Total No <= 34: HM (5.0)
+
+Session Duration <= 1588 AND
+Interval SD > 123.447722 AND
+Interval Kurt > 18.111161 AND
+Flight Skew > 881.796857 AND
+Rate of Visit Count per Session <= 6.679368 AND
+Rate of Visit Count per Session > 1.804362: VHP (9.0)
+
+Session Duration <= 1588 AND
+Interval SD > 123.447722 AND
+Rate of Visit > 0.010294 AND
+Rate of Visit Count per Session <= 0.292323: VHP (5.0)
+
+Session Duration <= 1588 AND
+Rate of Visit Count per Session <= 0.554463 AND
+Flight Kurt > 16.697861: HP (11.0/2.0)
+
+Session Duration <= 1574 AND
+Interval SD > 123.447722 AND
+Rate of Visit > 0.010294 AND
+Total No > 29 AND
+Rate Visit per Session <= 0.025735: HP (3.0/1.0)
+
+Session Duration <= 1574 AND
+Interval SD > 123.447722 AND
+Rate of Visit > 0.010294 AND
+Total No <= 27 AND
+Rate of Visit Count per Session > 1.480695 AND
+Rate Visit per Session <= 0.020385: HM (7.0)
+
+Session Duration <= 1574 AND
+Interval SD > 123.447722 AND
+Rate of Visit > 0.013749 AND
+Flight SD <= 165.66897: HP (12.0/1.0)
+
+Session Duration <= 1574 AND
+Interval SD > 128.967048 AND
+Rate of Visit > 0.013689 AND
+Rate of Visit > 0.023569: HM (7.0/1.0)
+
+Session Duration <= 1574 AND
+Interval SD > 128.967048 AND
+Rate of Visit > 0.013689 AND
+Rate of Visit <= 0.020142 AND
+Session Duration <= 1186: HM (6.0/1.0)
+
+Session Duration <= 1574 AND
+Interval SD > 128.967048 AND
+Rate of Visit > 0.01261 AND
+Flight Skew <= 775.928729: HP (13.0/1.0)
+
+Session Duration <= 1574 AND
+Interval SD > 128.967048 AND
+Session Duration > 1544 AND
+Rate of Visit Count per Session <= 6.372781 AND
+Total No <= 22 AND
+Flight Skew <= 1080.031969: HM (13.0/1.0)
+
+Session Duration <= 1576 AND
+Interval SD > 128.967048: HP (619.0/337.0)
+
+Rate of Visit <= 0.000528 AND
+Total No > 7 AND
+Rate of Visit > 0.000385: VHP (8.0/1.0)
+
+Rate of Visit <= 0.000528 AND
+Flight Kurt <= 4.172582 AND
+Total No > 6 AND
+Total No <= 8 AND
+Flight Kurt <= 2.441084: HP (14.0/6.0)
+
+Rate of Visit <= 0.000528 AND
+Flight Kurt <= 4.172582: HM (20.0)
+
+Rate Visit per Session <= 0.020528 AND
+Rate of Visit Count per Session <= 2.50762 AND
+Session Duration > 5440 AND
+Rate of Visit Count per Session <= 0.713476 AND
+Session Duration > 5853: VHP (20.0/5.0)
+
+Rate Visit per Session > 0.020528 AND
+Interval SD > 136.35582 AND
+Rate Visit per Session > 0.024559 AND
+Rate of Visit <= 0.014544: HP (13.0)
+
+Rate Visit per Session > 0.020528 AND
+Session Duration <= 12 AND
+Session Duration > 7: VHP (27.0/9.0)
+
+Rate Visit per Session <= 0.020528 AND
+Rate of Visit Count per Session > 2.50762 AND
+Session Duration > 2525 AND
+Session Duration > 6301 AND
+Rate of Visit Count per Session <= 3.972927: HM (11.0)
+
+Session Duration <= 1101 AND
+Rate of Visit <= 0.008649 AND
+Total No > 44 AND
+Rate of Visit > 0.003167 AND
+Flight SD <= 36.34788 AND
+Flight SD <= 20.531818 AND
+Total No <= 75: HP (11.0/1.0)
+
+Rate of Visit <= 0.001061 AND
+Total No > 6 AND
+Rate of Visit > 0.001032: HP (18.0)
+
+Rate Visit per Session <= 0.020528 AND
+Total No > 77 AND
+Rate of Visit <= 0.004685 AND
+Rate of Visit > 0.003118: HM (8.0)
+
+Session Duration > 5440 AND
+Total No <= 385 AND
+Rate of Visit > 0.005741 AND
+Total No <= 210 AND
+Rate of Visit Count per Session > 1.217785: HP (23.0)
+
+Rate Visit per Session <= 0.020528 AND
+Rate of Visit Count per Session <= 2.634011 AND
+Rate of Visit Count per Session <= 0.760579 AND
+Session Duration <= 5465 AND
+Rate of Visit Count per Session <= 0.426961 AND
+Flight SD > 368.887997: HP (7.0/1.0)
+
+Rate Visit per Session <= 0.020528 AND
+Rate of Visit Count per Session <= 2.634011 AND
+Session Duration > 7505 AND
+Rate of Visit <= 0.013477 AND
+Flight SD <= 292.41132: HM (6.0)
+
+Rate Visit per Session <= 0.020528 AND
+Total No > 77 AND
+Session Duration > 4944 AND
+Session Duration <= 8613: VHP (20.0/9.0)
+
+Rate Visit per Session <= 0.020528 AND
+Rate of Visit Count per Session <= 2.634011 AND
+Session Duration > 5598: HP (12.0)
+
+Rate Visit per Session <= 0.020528 AND
+Rate of Visit Count per Session <= 2.634011 AND
+Rate of Visit Count per Session <= 0.426961 AND
+Rate Visit per Session <= 0.015235 AND
+Rate Visit per Session <= 0.012953 AND
+Flight Kurt > 13.16667: HP (5.0/1.0)
+
+Rate Visit per Session <= 0.020528 AND
+Rate of Visit Count per Session <= 2.578803 AND
+Rate of Visit > 0.019608 AND
+Flight SD > 211.886502 AND
+Rate of Visit Count per Session <= 0.47289: HM (6.0)
+
+Rate Visit per Session <= 0.020528 AND
+Rate of Visit Count per Session <= 2.578803 AND
+Rate of Visit Count per Session > 0.571551 AND
+Session Duration > 1758 AND
+Session Duration <= 3584: VHP (110.0/33.0)
+
+Rate Visit per Session <= 0.016732 AND
+Rate of Visit Count per Session <= 1.196552 AND
+Rate of Visit <= 0.016403: VHP (36.0/9.0)
+
+Rate Visit per Session <= 0.01664 AND
+Rate of Visit Count per Session <= 1.301865 AND
+Flight Kurt > 9.899793: HP (17.0/4.0)
+
+Rate Visit per Session <= 0.01664 AND
+Session Duration > 1810 AND
+Total No <= 58 AND
+Flight Kurt > 13.988787 AND
+Rate of Visit <= 0.00609: HP (31.0/12.0)
+
+Rate Visit per Session <= 0.016732 AND
+Total No <= 58 AND
+Total No > 15 AND
+Flight Skew <= 292.60169 AND
+Rate Visit per Session > 0.014372: HM (17.0)
+
+Rate Visit per Session <= 0.015656 AND
+Flight Kurt <= 19.849154 AND
+Session Duration > 1646 AND
+Session Duration <= 1810 AND
+Rate of Visit <= 0.003339: HM (57.0/18.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.008169 AND
+Rate of Visit > 0.006525 AND
+Total No > 23: VHP (30.0/2.0)
+
+Total No <= 36 AND
+Rate of Visit > 0.006841 AND
+Rate of Visit <= 0.00725 AND
+Session Duration <= 89: HP (34.0)
+
+Total No > 41 AND
+Rate of Visit <= 0.006475 AND
+Rate of Visit <= 0.002524 AND
+Rate of Visit <= 0.001767 AND
+Total No <= 50: HP (4.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.008169 AND
+Rate of Visit > 0.003077 AND
+Total No <= 4 AND
+Rate of Visit <= 0.006335 AND
+Rate of Visit > 0.004629: HM (23.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.008169 AND
+Session Duration > 1248 AND
+Total No <= 10 AND
+Rate Visit per Session > 0.004811: HP (5.0)
+
+Total No <= 36 AND
+Rate of Visit <= 0.006841 AND
+Rate of Visit > 0.004714 AND
+Total No > 18 AND
+Total No <= 27: VHP (34.0/2.0)
+
+Session Duration <= 1101 AND
+Rate of Visit <= 0.008649 AND
+Total No <= 9: VHP (953.0/574.0)
+
+Rate of Visit <= 0.001085 AND
+Total No <= 13 AND
+Rate of Visit > 0.000701 AND
+Rate of Visit > 0.000835: HP (14.0)
+
+Rate of Visit <= 0.001295 AND
+Total No > 18 AND
+Rate of Visit <= 0.001177 AND
+Rate of Visit <= 0.000808: HP (6.0)
+
+Rate of Visit <= 0.001295: HM (161.0/79.0)
+
+Total No <= 9 AND
+Rate of Visit <= 0.008908: HM (26.0/1.0)
+
+Rate Visit per Session <= 0.020133 AND
+Total No > 36 AND
+Total No > 77: HP (9.0/1.0)
+
+Interval Mean > 47.722222 AND
+Total No > 58: HM (20.0/3.0)
+
+Total No <= 9 AND
+Rate of Visit > 0.017595 AND
+Total No > 8 AND
+Rate of Visit <= 0.020856: HM (5.0/1.0)
