@@ -55,76 +55,84 @@ class WekaComparator extends java.awt.Component{
         mainFrame.setVisible(true);
     }
     private void start_process() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("=============================================================================================");
-        System.out.println("\n" +
-                " _       __     __            ______                                       __            \n" +
-                "| |     / /__  / /______ _   / ____/___  ____ ___  ____  ____ __________ _/ /_____  _____\n" +
-                "| | /| / / _ \\/ //_/ __ `/  / /   / __ \\/ __ `__ \\/ __ \\/ __ `/ ___/ __ `/ __/ __ \\/ ___/\n" +
-                "| |/ |/ /  __/ ,< / /_/ /  / /___/ /_/ / / / / / / /_/ / /_/ / /  / /_/ / /_/ /_/ / /    \n" +
-                "|__/|__/\\___/_/|_|\\__,_/   \\____/\\____/_/ /_/ /_/ .___/\\__,_/_/   \\__,_/\\__/\\____/_/     \n" +
-                "                                               /_/                                       \n" +
-                "                                                                       -- By Avinash Singh\n");
-        System.out.println("=============================================================================================");
-        System.out.println("\nWelcome to the Weka Comparator\n");
-        System.out.print("Please choose input file type (0 - tree, 1 - part): ");
-        int type = Integer.parseInt(scan.nextLine());
+        try {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("=============================================================================================");
+            System.out.println("\n" +
+                    " _       __     __            ______                                       __            \n" +
+                    "| |     / /__  / /______ _   / ____/___  ____ ___  ____  ____ __________ _/ /_____  _____\n" +
+                    "| | /| / / _ \\/ //_/ __ `/  / /   / __ \\/ __ `__ \\/ __ \\/ __ `/ ___/ __ `/ __/ __ \\/ ___/\n" +
+                    "| |/ |/ /  __/ ,< / /_/ /  / /___/ /_/ / / / / / / /_/ / /_/ / /  / /_/ / /_/ /_/ / /    \n" +
+                    "|__/|__/\\___/_/|_|\\__,_/   \\____/\\____/_/ /_/ /_/ .___/\\__,_/_/   \\__,_/\\__/\\____/_/     \n" +
+                    "                                               /_/                                       \n" +
+                    "                                                                       -- By Avinash Singh\n");
+            System.out.println("=============================================================================================");
+            System.out.println("\nWelcome to the Weka Comparator\n");
+            System.out.print("Please choose input file type (0 - tree, 1 - part): ");
+            int type = Integer.parseInt(scan.nextLine());
 
-        System.out.print("Please choose TREE or PART file (pop-up window): ");
-        JFileChooser fileChooser = new JFileChooser();
-        if (type == 0)
-            fileChooser.setDialogTitle("Open TREE file");
-        else
-            fileChooser.setDialogTitle("Open PART file");
-        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home") + "/Desktop"));
-        FileNameExtensionFilter ffilter = new FileNameExtensionFilter("Text files", "txt");
-        fileChooser.setFileFilter(ffilter);
-        int result = fileChooser.showOpenDialog(this);
-        if (result == JFileChooser.APPROVE_OPTION) {
-            File selectedFile = fileChooser.getSelectedFile();
-            System.out.println(selectedFile.getAbsolutePath());
-            String file = selectedFile.getAbsolutePath();
-            String dfile = file;
-//            check
-            if (type == 0) {
-                dfile = selectedFile.getParent() + "\\TREE_" + selectedFile.getName();
-                System.out.println("Converted to TREE format at: " +dfile);
-                writePart(split(readFile(file)), dfile);
-            }
-
-            System.out.print("Save as (xlsx): ");
-            ffilter = new FileNameExtensionFilter("Excel files", "xlsx");
+            System.out.print("Please choose TREE or PART file (pop-up window): ");
+            final JFileChooser fileChooser = new JFileChooser();
+            if (type == 0)
+                fileChooser.setDialogTitle("Open TREE file");
+            else
+                fileChooser.setDialogTitle("Open PART file");
+            fileChooser.setCurrentDirectory(new File(System.getProperty("user.home") + "/Desktop"));
+            FileNameExtensionFilter ffilter = new FileNameExtensionFilter("Text files", "txt");
             fileChooser.setFileFilter(ffilter);
-            fileChooser.setDialogTitle("Save PART as");
-
-            result = fileChooser.showSaveDialog(this);
+            int result = fileChooser.showOpenDialog(this);
             if (result == JFileChooser.APPROVE_OPTION) {
-                String dest = fileChooser.getSelectedFile().getAbsolutePath()+".xlsx";
-                System.out.println(dest);
-                writeTable(dfile, dest, type);
-                System.out.print("Choose Test data file (xlsx) (pop-up window): ");
-                fileChooser.setDialogTitle("Open Test data file (xlsx)");
-                result = fileChooser.showOpenDialog(this);
+                File selectedFile = fileChooser.getSelectedFile();
+                System.out.println(selectedFile.getAbsolutePath());
+                String file = selectedFile.getAbsolutePath();
+                String dfile = file;
+//            check
+                if (type == 0) {
+                    dfile = selectedFile.getParent() + "\\TREE_" + selectedFile.getName();
+                    System.out.println("Converted to TREE format at: " + dfile);
+                    writePart(split(readFile(file)), dfile);
+                }
+
+                System.out.print("Save as (xlsx): ");
+                ffilter = new FileNameExtensionFilter("Excel files", "xlsx");
+                fileChooser.setFileFilter(ffilter);
+                fileChooser.setDialogTitle("Save PART as");
+
+                result = fileChooser.showSaveDialog(this);
                 if (result == JFileChooser.APPROVE_OPTION) {
-                    String filter = fileChooser.getSelectedFile().getAbsolutePath();
-                    System.out.println(filter);
+                    String dest = fileChooser.getSelectedFile().getAbsolutePath() + ".xlsx";
+                    System.out.println(dest);
+                    writeTable(dfile, dest, type);
+                    System.out.print("Choose Test data file (xlsx) (pop-up window): ");
+                    fileChooser.setDialogTitle("Open Test data file (xlsx)");
+                    result = fileChooser.showOpenDialog(this);
+                    if (result == JFileChooser.APPROVE_OPTION) {
+                        String filter = fileChooser.getSelectedFile().getAbsolutePath();
+                        System.out.println(filter);
 
-                    System.out.print("Enter value to filter (>=): ");
-                    String value = scan.nextLine();
-                    System.out.println("");
-                    System.out.print("Enter percentage success to filter (>= %): ");
-                    String percentage = scan.nextLine();
+                        System.out.print("Enter value to filter (>): ");
+                        String value = scan.nextLine();
+                        System.out.println("");
+                        System.out.print("Enter percentage success to filter (> %): ");
+                        String percentage = scan.nextLine();
 
-                    if (!value.equals("") && !percentage.equals(""))
-                        filterTable(dest, filter, value, percentage);
-                    else
-                        System.out.println("ERROR: Value or percentage cannot be empty");
+                        if (!value.equals("") && !percentage.equals("")) {
+                            System.out.println("Processing ...");
+                            filterTable(dest, filter, value, percentage);
+                        } else
+                            System.out.println("ERROR: Value or percentage cannot be empty");
+                    }
                 }
             }
+
+            System.out.println("Press [ENTER] to exit");
+            scan.nextLine();
+        }
+        catch (Exception e)
+        {
+            System.out.println("ERROR: Unexpected/incorrect input");
         }
 
-        System.out.println("Press [ENTER] to exit" );
-        scan.nextLine();
     }
 
     private void getFile(){
@@ -317,7 +325,7 @@ class WekaComparator extends java.awt.Component{
 
     private void filterTable(String fname, String filter, String input, String percentage) {
         try {
-
+            ///// FILTER
             FileInputStream excelFile = new FileInputStream(new File(filter));
             Workbook workbook = new XSSFWorkbook(excelFile);
             Sheet datatypeSheet = workbook.getSheetAt(0);
@@ -378,12 +386,11 @@ class WekaComparator extends java.awt.Component{
                 while (cellIterator.hasNext()) {
 
                     Cell currentCell = cellIterator.next();
-                    if (i == 0){
+                    if (i == 0) {
                         ruleHeadings.add(currentCell.getStringCellValue());
                         ruleTable.add(new ArrayList<String>());
-                    }
-                    else {
-                        switch(currentCell.getCellType()) {
+                    } else {
+                        switch (currentCell.getCellType()) {
                             case Cell.CELL_TYPE_BOOLEAN:
                                 ruleTable.get(k).add(String.valueOf(currentCell.getBooleanCellValue()));
                                 break;
@@ -400,278 +407,98 @@ class WekaComparator extends java.awt.Component{
                 i++;
             }
 
-//            System.out.println(ruleHeadings);
-            ArrayList<Integer> successIndex = new ArrayList<>();
-            ArrayList<String> testLabels = new ArrayList<>(Collections.nCopies(ruleTable.get(1).size(), ""));
-            for (int c = 0; c < ruleTable.get(1).size(); c++)
-            {
-                boolean success = true;
-                String[] rules = ruleTable.get(1).get(c).split("AND");
-                for (String r : rules) {
-                    if (success) {
-                        if (r.contains(">=")) {
 
+//            System.out.println(ruleHeadings);
+
+            ArrayList<String> testLabels = new ArrayList<>(Collections.nCopies(ruleTable.get(1).size(), ""));
+
+            ArrayList<String> ri = new ArrayList<>();
+            for (int ti = 0; ti < table.get(1).size(); ti++) {
+                String matches = "";
+                ArrayList<Integer> successIndex = new ArrayList<>();
+                for (int c = 0; c < ruleTable.get(1).size(); c++) {
+                    boolean success = true;
+                    String[] rules = ruleTable.get(1).get(c).split("AND");
+                    for (String r : rules) {
+                        if (r.contains(">=")) {
                             String h = r.substring(0, r.indexOf(">="));
                             Float val = Float.parseFloat(r.substring(r.indexOf(">=") + 2));
                             int index = headings.indexOf(h.trim());
-                            int tt = 0;
-                            for (String t : table.get(index)){
-                                success = Float.parseFloat(t) >= val;
-                                if (success)
-                                {
-                                    testLabels.set(c, testLabels.get(c) + ", " + table.get(table.size()-1).get(tt));
-                                    break;
-                                }
-                                tt++;
-                            }
+                            success = Float.parseFloat(table.get(index).get(ti)) >= val;
                         } else if (r.contains("<=")) {
-
                             String h = r.substring(0, r.indexOf("<="));
                             Float val = Float.parseFloat(r.substring(r.indexOf("<=") + 2));
                             int index = headings.indexOf(h.trim());
-                            int tt = 0;
-                            for (String t : table.get(index)){
-                                success = Float.parseFloat(t) <= val;
-                                if (success)
-                                {
-                                    testLabels.set(c, testLabels.get(c) + ", " + table.get(table.size()-1).get(tt));
-                                    break;
-                                }
-                                tt++;
-                            }
-
+                            success = Float.parseFloat(table.get(index).get(ti)) <= val;
                         } else if (r.contains("<")) {
-
                             String h = r.substring(0, r.indexOf("<"));
                             Float val = Float.parseFloat(r.substring(r.indexOf("<") + 1));
                             int index = headings.indexOf(h.trim());
-                            int tt = 0;
-                            for (String t : table.get(index)){
-                                success = Float.parseFloat(t) < val;
-                                if (success)
-                                {
-                                    testLabels.set(c, testLabels.get(c) + ", " + table.get(table.size()-1).get(tt));
-
-                                }
-                                tt++;
-                            }
-
+                            success = Float.parseFloat(table.get(index).get(ti)) < val;
                         } else if (r.contains(">")) {
-
                             String h = r.substring(0, r.indexOf(">"));
                             Float val = Float.parseFloat(r.substring(r.indexOf(">") + 1));
                             int index = headings.indexOf(h.trim());
-                            int tt = 0;
-                            for (String t : table.get(index)){
-                                success = Float.parseFloat(t) > val;
-                                if (success)
-                                {
-                                    testLabels.set(c, testLabels.get(c) + ", " + table.get(table.size()-1).get(tt));
-
-                                }
-                                tt++;
-                            }
+                            success = Float.parseFloat(table.get(index).get(ti)) > val;
                         } else if (r.contains("=")) {
-
                             String h = r.substring(0, r.indexOf("="));
                             Float val = Float.parseFloat(r.substring(r.indexOf("=") + 1));
                             int index = headings.indexOf(h.trim());
-                            int tt = 0;
-                            for (String t : table.get(index)){
-                                success = Float.parseFloat(t) == val;
-                                if (success)
-                                {
-                                    testLabels.set(c, testLabels.get(c) + ", " + table.get(table.size()-1).get(tt));
-
-                                }
-                                tt++;
-                            }
+                            success = Float.parseFloat(table.get(index).get(ti)) == val;
                         }
                     }
-                }
-                if (success) {
-                    successIndex.add(c);
-//                    System.out.println("SI : "+c);
-                }
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
-            ////
-            ///////////////////////////////////////////////////////////////////////////////
-
-            XSSFWorkbook out = new XSSFWorkbook();
-            XSSFSheet successSheet = out.createSheet("Success");
-            XSSFSheet failedSheet = out.createSheet("Failed");
-            int si = 0, sk = 0, fi = 0, fk = 0;
-
-            Row row;
-            row = successSheet.createRow(si++);
-            row.createCell(sk++).setCellValue("#");
-            row.createCell(sk++).setCellValue("Rule");
-            row.createCell(sk++).setCellValue("Training Label");
-            row.createCell(sk++).setCellValue("+");
-            row.createCell(sk++).setCellValue("-");
-            row.createCell(sk++).setCellValue("%");
-            row.createCell(sk).setCellValue("Test Label");
-
-            row = failedSheet.createRow(fi++);
-            row.createCell(fk++).setCellValue("#");
-            row.createCell(fk++).setCellValue("Rule");
-            row.createCell(fk++).setCellValue("Training Label");
-            row.createCell(fk++).setCellValue("+");
-            row.createCell(fk++).setCellValue("-");
-            row.createCell(fk++).setCellValue("%");
-            row.createCell(fk).setCellValue("Test Label");
-
-            int count = 0;
-            for (String x: ruleTable.get(0)) {
-                fk = 0;
-                sk = 0;
-
-                if (successIndex.contains(count)) {
-                    row = successSheet.createRow(si++);
-                    row.createCell(sk++).setCellValue(si-1);
-                    row.createCell(sk++).setCellValue(ruleTable.get(1).get(count));
-                    row.createCell(sk++).setCellValue(ruleTable.get(2).get(count));
-                    row.createCell(sk++).setCellValue(ruleTable.get(3).get(count));
-                    row.createCell(sk++).setCellValue(ruleTable.get(4).get(count));
-                    row.createCell(sk++).setCellValue(ruleTable.get(5).get(count));
-                    if (testLabels.size() > 0) {
-                        if (testLabels.get(count).length() > 0) {
-                            List<String> items = Arrays.asList(testLabels.get(count).substring(1).split(","));
-                            Map<String, Long> result =
-                                    items.stream().collect(
-                                            Collectors.groupingBy(
-                                                    Function.identity(), Collectors.counting()
-                                            )
-                                    );
-                            row.createCell(sk).setCellValue(result.toString());
-                        }
+                    if (success) {
+                        if (Float.parseFloat(ruleTable.get(3).get(c)) > Float.parseFloat(input))
+                            if (Float.parseFloat(ruleTable.get(5).get(c)) > Float.parseFloat(percentage))
+                                successIndex.add(c);
                     }
                 }
-                else {
-                    row = failedSheet.createRow(fi++);
-                    row.createCell(fk++).setCellValue(fi-1);
-                    row.createCell(fk++).setCellValue(ruleTable.get(1).get(count));
-                    row.createCell(fk++).setCellValue(ruleTable.get(2).get(count));
-                    row.createCell(fk++).setCellValue(ruleTable.get(3).get(count));
-                    row.createCell(fk++).setCellValue(ruleTable.get(4).get(count));
-                    row.createCell(fk++).setCellValue(ruleTable.get(5).get(count));
-                    if (testLabels.size() > 0) {
-                        if (testLabels.get(count).length() > 0) {
-                            List<String> items = Arrays.asList(testLabels.get(count).split(","));
-                            Map<String, Long> result =
-                                    items.stream().collect(
-                                            Collectors.groupingBy(
-                                                    Function.identity(), Collectors.counting()
-                                            )
-                                    );
-                            row.createCell(fk).setCellValue(result.toString());
-                        }
+
+                    //////
+//                    System.out.println(successIndex.size());
+                    String tmp = "[";
+                    for (int si = 0; si < successIndex.size(); si++) {
+                        int index = successIndex.get(si);
+                        tmp += "{" +
+                                "\"rule\": " + (index+1) + "," +
+                                "\"label\": \"" + ruleTable.get(2).get(index) + "\", " +
+                                "\"+\": " + ruleTable.get(3).get(index) + ", " +
+                                "\"-\": " + ruleTable.get(4).get(index) + ", " +
+                                "\"%\": " + ruleTable.get(5).get(index) + "}";
+                        if (si < successIndex.size()-1)
+                            tmp += ", ";
                     }
+                    ri.add(tmp + "]");
                 }
-                count++;
-            }
-            FileOutputStream outputStream = new FileOutputStream(fname +"_Compared.xlsx");
-            out.write(outputStream);
-            out.close();
 
-            //////////////////////////////////////////////////////////////////////////////////
-            ////////////
-            //////////////////////////////////////////////////////////////////////////////////
 
-            XSSFWorkbook in = new XSSFWorkbook();
-            successSheet = in.createSheet("Success");
-            failedSheet = in.createSheet("Failed");
-            si = 0;
-            sk = 0;
-            fi = 0;
-            fk = 0;
+                ////////////////////////////////////////////////////////////////////////////////
+                ////
+                ///////////////////////////////////////////////////////////////////////////////
 
-            row = successSheet.createRow(si++);
-            row.createCell(sk++).setCellValue("#");
-            row.createCell(sk++).setCellValue("Rule");
-            row.createCell(sk++).setCellValue("Training Label");
-            row.createCell(sk++).setCellValue("+");
-            row.createCell(sk++).setCellValue("-");
-            row.createCell(sk++).setCellValue("%");
-            row.createCell(sk++).setCellValue("Test Label");
-            row.createCell(sk++).setCellValue("User input");
-            row.createCell(sk).setCellValue("User Percentage");
+                XSSFWorkbook out = new XSSFWorkbook();
+                XSSFSheet successSheet = out.createSheet("Success");
+//            XSSFSheet failedSheet = out.createSheet("Failed");
+                int sc = 0, sr = 0;
 
-            row = failedSheet.createRow(fi++);
-            row.createCell(fk++).setCellValue("#");
-            row.createCell(fk++).setCellValue("Rule");
-            row.createCell(fk++).setCellValue("Training Label");
-            row.createCell(fk++).setCellValue("+");
-            row.createCell(fk++).setCellValue("-");
-            row.createCell(fk++).setCellValue("%");
-            row.createCell(fk++).setCellValue("Test Label");
-            row.createCell(fk++).setCellValue("User input");
-            row.createCell(fk).setCellValue("User Percentage");
+                Row row;
+                row = successSheet.createRow(sr++);
+                row.createCell(sc++).setCellValue("#");
+                row.createCell(sc++).setCellValue("Training Matches");
+                row.createCell(sc).setCellValue("Test Label");
 
-            count = 0;
-            for (String x: ruleTable.get(0)) {
-                fk = 0;
-                sk = 0;
-
-                if (successIndex.contains(count)) {
-                    if (Float.parseFloat(ruleTable.get(3).get(count)) >= Float.parseFloat(input)) {
-                        if (Float.parseFloat(ruleTable.get(5).get(count)) >= Float.parseFloat(percentage)) {
-                            row = successSheet.createRow(si++);
-                            row.createCell(sk++).setCellValue(si - 1);
-                            row.createCell(sk++).setCellValue(ruleTable.get(1).get(count));
-                            row.createCell(sk++).setCellValue(ruleTable.get(2).get(count));
-                            row.createCell(sk++).setCellValue(ruleTable.get(3).get(count));
-                            row.createCell(sk++).setCellValue(ruleTable.get(4).get(count));
-                            row.createCell(sk++).setCellValue(ruleTable.get(5).get(count));
-                            if (testLabels.get(count).length() > 0) {
-                                List<String> items = Arrays.asList(testLabels.get(count).substring(1).split(","));
-                                Map<String, Long> result =
-                                        items.stream().collect(
-                                                Collectors.groupingBy(
-                                                        Function.identity(), Collectors.counting()
-                                                )
-                                        );
-                                row.createCell(sk++).setCellValue(result.toString());
-                                row.createCell(sk++).setCellValue(Float.parseFloat(input));
-                                row.createCell(sk).setCellValue(Float.parseFloat(percentage));
-                            }
-                        }
-                    }
+                for (int si = 0; si < table.get(1).size(); si++) {
+                    row = successSheet.createRow(sr++);
+                    sc = 0;
+                    row.createCell(sc++).setCellValue(si + 1);
+                    row.createCell(sc++).setCellValue(ri.get(si));
+                    row.createCell(sc).setCellValue(table.get(table.size() - 1).get(si));
                 }
-                else {
-                    if (Float.parseFloat(ruleTable.get(3).get(count)) >= Float.parseFloat(input)) {
-                        if (Float.parseFloat(ruleTable.get(5).get(count)) >= Float.parseFloat(percentage)) {
-                            row = failedSheet.createRow(fi++);
-                            row.createCell(fk++).setCellValue(fi - 1);
-                            row.createCell(fk++).setCellValue(ruleTable.get(1).get(count));
-                            row.createCell(fk++).setCellValue(ruleTable.get(2).get(count));
-                            row.createCell(fk++).setCellValue(ruleTable.get(3).get(count));
-                            row.createCell(fk++).setCellValue(ruleTable.get(4).get(count));
-                            row.createCell(fk++).setCellValue(ruleTable.get(5).get(count));
-                            if (testLabels.get(count).length() > 0) {
-                                List<String> items = Arrays.asList(testLabels.get(count).split(","));
-                                Map<String, Long> result =
-                                        items.stream().collect(
-                                                Collectors.groupingBy(
-                                                        Function.identity(), Collectors.counting()
-                                                )
-                                        );
-                                row.createCell(fk++).setCellValue(result.toString());
-                                row.createCell(fk++).setCellValue(Float.parseFloat(input));
-                                row.createCell(fk).setCellValue(Float.parseFloat(percentage));
-                            }
-                        }
-                    }
-                }
-                count++;
-            }
-            outputStream = new FileOutputStream(fname +"_Compared_"+input+"_"+percentage+"%_.xlsx");
-            in.write(outputStream);
-            in.close();
-            System.out.println("Completed Successfully");
+
+                FileOutputStream outputStream = new FileOutputStream(fname + "_Compared_" + input + "_" + percentage + "%_.xlsx");
+                out.write(outputStream);
+                out.close();
+                System.out.println("Completed Successfully");
 
 
         } catch (ArrayIndexOutOfBoundsException e) {
@@ -688,8 +515,8 @@ class WekaComparator extends java.awt.Component{
         catch (Exception e)
         {
             System.out.println("ERROR: An Error occurred.");
+//            e.printStackTrace();
         }
-
     }
 
 
