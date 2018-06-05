@@ -13,7 +13,12 @@
 
 # WekaComparator
 
-Simple tree parser, takes in a TREE or PART from Weka output from training and converts to a excel table or rules and labels with positive and negative matches as well as a percentage. The rules are then matched to the test input and is stored in a specific format. This can be filtered based on percentage and number of samples.
+Simple tree parser, takes in a TREE or PART file from Weka and converts to a excel table of rules and labels with positive and negative matches as well as a percentage. The rules are then matched to the test input and is stored in a specific format. This can be filtered based on percentage and number of positive samples.
+
+## Installation
+The binary is available here  [WekaComparator.exe](https://github.com/AvinashSingh786/WekaComparator/releases/download/1/WekaComparator.exe) or can be compiled and executed with maven.
+
+
 
 ## Input
 An example of the sample files and format are provided, the UI is very simple. An example of how to use it can be seen below:
