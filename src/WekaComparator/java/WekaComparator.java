@@ -1,6 +1,7 @@
 
 import com.sun.org.apache.xpath.internal.SourceTree;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -127,6 +128,9 @@ class WekaComparator extends java.awt.Component{
 
             System.out.println("Press [ENTER] to exit");
             scan.nextLine();
+//            filterTable("E:\\Users\\Avinash\\Desktop\\Dr Richard\\WekaComparator\\Part2.xlsx",
+//                    "E:\\Users\\Avinash\\Desktop\\Dr Richard\\WekaComparator\\\\Test-dataset.xlsx", "5", "95");
+
         }
         catch (Exception e)
         {
@@ -411,13 +415,16 @@ class WekaComparator extends java.awt.Component{
 //            System.out.println(ruleHeadings);
 
             ArrayList<String> testLabels = new ArrayList<>(Collections.nCopies(ruleTable.get(1).size(), ""));
-
+            ArrayList<Integer> split = new ArrayList<>();
             ArrayList<String> ri = new ArrayList<>();
             for (int ti = 0; ti < table.get(1).size(); ti++) {
                 String matches = "";
+                System.out.printf("\r%.2f%%", ((double) ti / (double) table.get(1).size()) * 100.0);
                 ArrayList<Integer> successIndex = new ArrayList<>();
+
                 for (int c = 0; c < ruleTable.get(1).size(); c++) {
                     boolean success = true;
+
                     String[] rules = ruleTable.get(1).get(c).split("AND");
                     for (String r : rules) {
                         if (r.contains(">=")) {
@@ -454,30 +461,42 @@ class WekaComparator extends java.awt.Component{
                     }
                 }
 
-                    //////
+                //////
 //                    System.out.println(successIndex.size());
-                    String tmp = "[";
-                    for (int si = 0; si < successIndex.size(); si++) {
-                        int index = successIndex.get(si);
+
+                String tmp = "[";
+                int count = 1;
+                for (int si = 0; si < successIndex.size(); si++) {
+                    int index = successIndex.get(si);
+                    if (tmp.length() < 32000) {
                         tmp += "{" +
-                                "\"rule\": " + (index+1) + "," +
+                                "\"rule\": " + (index + 1) + "," +
                                 "\"label\": \"" + ruleTable.get(2).get(index) + "\", " +
                                 "\"+\": " + ruleTable.get(3).get(index) + ", " +
                                 "\"-\": " + ruleTable.get(4).get(index) + ", " +
                                 "\"%\": " + ruleTable.get(5).get(index) + "}";
-                        if (si < successIndex.size()-1)
+                        if (si < successIndex.size() - 1 && tmp.length() < 32000)
                             tmp += ", ";
+                    } else {
+                        ri.add(tmp + "]");
+                        tmp = "[";
+                        count += 1;
+
                     }
-                    ri.add(tmp + "]");
+
                 }
+                ri.add(tmp + "]");
+                split.add(count);
+            }
 
-
+                 System.out.println("\r100%");
                 ////////////////////////////////////////////////////////////////////////////////
                 ////
                 ///////////////////////////////////////////////////////////////////////////////
-
+                System.out.println("Writing ...");
                 XSSFWorkbook out = new XSSFWorkbook();
                 XSSFSheet successSheet = out.createSheet("Success");
+
 //            XSSFSheet failedSheet = out.createSheet("Failed");
                 int sc = 0, sr = 0;
 
@@ -486,15 +505,29 @@ class WekaComparator extends java.awt.Component{
                 row.createCell(sc++).setCellValue("#");
                 row.createCell(sc++).setCellValue("Training Matches");
                 row.createCell(sc).setCellValue("Test Label");
-
+                int ll = 0;
                 for (int si = 0; si < table.get(1).size(); si++) {
+                    System.out.printf("\r%.2f%%",((double)si/(double)table.get(1).size()) * 100.0);
+
                     row = successSheet.createRow(sr++);
                     sc = 0;
                     row.createCell(sc++).setCellValue(si + 1);
-                    row.createCell(sc++).setCellValue(ri.get(si));
-                    row.createCell(sc).setCellValue(table.get(table.size() - 1).get(si));
-                }
 
+                    row.createCell(sc++).setCellValue(ri.get(ll++));
+                    row.createCell(sc).setCellValue(table.get(table.size() - 1).get(si));
+
+                    if (split.get(si) > 1)
+                    {
+                        for (int j = 1; j < split.get(si); j++) {
+                            row = successSheet.createRow(sr++);
+                            row.createCell(1).setCellValue(ri.get(ll++));
+                            row.createCell(2).setCellValue(table.get(table.size() - 1).get(si));
+                        }
+                    }
+
+
+                }
+                System.out.println("\r100%");
                 FileOutputStream outputStream = new FileOutputStream(fname + "_Compared_" + input + "_" + percentage + "%_.xlsx");
                 out.write(outputStream);
                 out.close();
@@ -503,19 +536,19 @@ class WekaComparator extends java.awt.Component{
 
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("ERROR: Test Data columns does not match any rule");
-//            e.printStackTrace();
+            e.printStackTrace();
         }
         catch (FileNotFoundException e) {
             System.out.println("ERROR: File does not exist or is currently open. Please close the file and try again");
-//            e.printStackTrace();
+            e.printStackTrace();
         } catch (IOException e) {
             System.out.println("ERROR: Could not write the file, please ensure that file is not open. Please close the file and try again");
-//            e.printStackTrace();
+            e.printStackTrace();
         }
         catch (Exception e)
         {
             System.out.println("ERROR: An Error occurred.");
-//            e.printStackTrace();
+            e.printStackTrace();
         }
     }
 
