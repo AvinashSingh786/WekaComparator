@@ -1,9 +1,12 @@
 
 import com.sun.org.apache.xpath.internal.SourceTree;
+
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -71,65 +74,143 @@ class WekaComparator extends java.awt.Component{
             System.out.println("\nWelcome to the Weka Comparator\n");
             System.out.print("Please choose input file type (0 - tree, 1 - part): ");
             int type = Integer.parseInt(scan.nextLine());
-
-            System.out.print("Please choose TREE or PART file (pop-up window): ");
+            System.out.print("Please choose an option (0 - multiple files, 1 - single file): ");
+            int type2 = Integer.parseInt(scan.nextLine());
+            System.out.print("Please choose one or multiple files (pop-up window): ");
             final JFileChooser fileChooser = new JFileChooser();
-            if (type == 0)
-                fileChooser.setDialogTitle("Open TREE file");
-            else
-                fileChooser.setDialogTitle("Open PART file");
-            fileChooser.setCurrentDirectory(new File(System.getProperty("user.home") + "/Desktop"));
-            FileNameExtensionFilter ffilter = new FileNameExtensionFilter("Text files", "txt");
-            fileChooser.setFileFilter(ffilter);
-            int result = fileChooser.showOpenDialog(this);
-            if (result == JFileChooser.APPROVE_OPTION) {
-                File selectedFile = fileChooser.getSelectedFile();
-                System.out.println(selectedFile.getAbsolutePath());
-                String file = selectedFile.getAbsolutePath();
-                String dfile = file;
-//            check
-                if (type == 0) {
-                    dfile = selectedFile.getParent() + "\\TREE_" + selectedFile.getName();
-                    System.out.println("Converted to TREE format at: " + dfile);
-                    writePart(split(readFile(file)), dfile);
-                }
 
-                System.out.print("Save as (xlsx): ");
-                ffilter = new FileNameExtensionFilter("Excel files", "xlsx");
+
+            if (type2 == 0)
+            {
+                    fileChooser.setMultiSelectionEnabled(true);
+                FileNameExtensionFilter ffilter = new FileNameExtensionFilter("Text files", "txt");
                 fileChooser.setFileFilter(ffilter);
-                fileChooser.setDialogTitle("Save PART as");
-
-                result = fileChooser.showSaveDialog(this);
-                if (result == JFileChooser.APPROVE_OPTION) {
-                    String dest = fileChooser.getSelectedFile().getAbsolutePath() + ".xlsx";
-                    System.out.println(dest);
-                    writeTable(dfile, dest, type);
-                    System.out.print("Choose Test data file (xlsx) (pop-up window): ");
-                    fileChooser.setDialogTitle("Open Test data file (xlsx)");
-                    result = fileChooser.showOpenDialog(this);
+                fileChooser.setCurrentDirectory(new File(new File(".").getAbsolutePath()));
+                    fileChooser.setDialogTitle("Open multiple files");
+                    int result = fileChooser.showOpenDialog(this);
                     if (result == JFileChooser.APPROVE_OPTION) {
-                        String filter = fileChooser.getSelectedFile().getAbsolutePath();
-                        System.out.println(filter);
+                        File[] files = fileChooser.getSelectedFiles();
+                        if (files != null)
+                            System.out.println(files[0].getParent());
 
-                        System.out.print("Enter value to filter (>): ");
-                        String value = scan.nextLine();
-                        System.out.println("");
-                        System.out.print("Enter percentage success to filter (> %): ");
-                        String percentage = scan.nextLine();
 
-                        if (!value.equals("") && !percentage.equals("")) {
-                            System.out.println("Processing ...");
-                            filterTable(dest, filter, value, percentage);
-                        } else
-                            System.out.println("ERROR: Value or percentage cannot be empty");
+                        System.out.print("Choose Test data file (xlsx) (pop-up window): ");
+                        ffilter = new FileNameExtensionFilter("Excel files", "xlsx");
+                        fileChooser.setFileFilter(ffilter);
+                        fileChooser.setMultiSelectionEnabled(false);
+                        fileChooser.setSelectedFile(new File(""));
+                        fileChooser.setSelectedFiles(null);
+                        fileChooser.setDialogTitle("Open Test data file (xlsx)");
+
+                        String value = "5";
+                        String percentage = "95";
+                        String filter = "";
+                        result = fileChooser.showOpenDialog(this);
+
+                        if (result == JFileChooser.APPROVE_OPTION) {
+                            filter = fileChooser.getSelectedFile().getAbsolutePath();
+                            System.out.println(filter);
+
+                            System.out.print("Enter value to filter (>): ");
+                            value = scan.nextLine();
+                            System.out.println("");
+                            System.out.print("Enter percentage success to filter (> %): ");
+                            percentage = scan.nextLine();
+                        }
+
+
+                        if (files != null) {
+                            for (File child : files) {
+//
+//                                System.out.println(child.getName());
+//                                System.out.println(child.getParent());
+//                                System.out.println(child.getPath());
+
+                                    String file = child.getName();
+                                    String dfile = child.getParent() + "\\" + file;
+                                    if (type == 0) {
+                                        dfile = child.getParent() + "\\TREE_" + file;
+                                        System.out.println("Converted to TREE format at: " + "\\TREE_" + file);
+                                        writePart(split(readFile(file)), file);
+                                    }
+
+                                    System.out.print("Save as (xlsx): ");
+
+                                    String dest = child.getParent() + "\\PART_" + file + ".xlsx";
+                                    System.out.println(dest);
+                                    writeTable(dfile, dest, type);
+
+                                    if (!value.equals("") && !percentage.equals("")) {
+                                        System.out.println("Processing ...");
+                                        filterTable(dest, filter, value, percentage);
+                                    } else
+                                        System.out.println("ERROR: Value or percentage cannot be empty");
+
+
+                            }
+                        }
+                    }
+            }
+            else {
+//                ________________________________________________________________________
+//            +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                System.out.print("Please choose TREE or PART file (pop-up window): ");
+
+                if (type == 0)
+                    fileChooser.setDialogTitle("Open TREE file");
+                else
+                    fileChooser.setDialogTitle("Open PART file");
+
+                FileNameExtensionFilter ffilter = new FileNameExtensionFilter("Text files", "txt");
+                fileChooser.setFileFilter(ffilter);
+                int result = fileChooser.showOpenDialog(this);
+                if (result == JFileChooser.APPROVE_OPTION) {
+                    File selectedFile = fileChooser.getSelectedFile();
+                    System.out.println(selectedFile.getAbsolutePath());
+                    String file = selectedFile.getAbsolutePath();
+                    String dfile = file;
+//            check
+                    if (type == 0) {
+                        dfile = selectedFile.getParent() + "\\TREE_" + selectedFile.getName();
+                        System.out.println("Converted to TREE format at: " + dfile);
+                        writePart(split(readFile(file)), dfile);
+                    }
+
+                    System.out.print("Save as (xlsx): ");
+                    ffilter = new FileNameExtensionFilter("Excel files", "xlsx");
+                    fileChooser.setFileFilter(ffilter);
+                    fileChooser.setDialogTitle("Save PART as");
+
+                    result = fileChooser.showSaveDialog(this);
+                    if (result == JFileChooser.APPROVE_OPTION) {
+                        String dest = fileChooser.getSelectedFile().getAbsolutePath() + ".xlsx";
+                        System.out.println(dest);
+                        writeTable(dfile, dest, type);
+                        System.out.print("Choose Test data file (xlsx) (pop-up window): ");
+                        fileChooser.setDialogTitle("Open Test data file (xlsx)");
+                        result = fileChooser.showOpenDialog(this);
+                        if (result == JFileChooser.APPROVE_OPTION) {
+                            String filter = fileChooser.getSelectedFile().getAbsolutePath();
+                            System.out.println(filter);
+
+                            System.out.print("Enter value to filter (>): ");
+                            String value = scan.nextLine();
+                            System.out.println("");
+                            System.out.print("Enter percentage success to filter (> %): ");
+                            String percentage = scan.nextLine();
+
+                            if (!value.equals("") && !percentage.equals("")) {
+                                System.out.println("Processing ...");
+                                filterTable(dest, filter, value, percentage);
+                            } else
+                                System.out.println("ERROR: Value or percentage cannot be empty");
+                        }
                     }
                 }
             }
-
             System.out.println("Press [ENTER] to exit");
             scan.nextLine();
-//            filterTable("E:\\Users\\Avinash\\Desktop\\Dr Richard\\WekaComparator\\Part2.xlsx",
-//                    "E:\\Users\\Avinash\\Desktop\\Dr Richard\\WekaComparator\\\\Test-dataset.xlsx", "5", "95");
 
         }
         catch (Exception e)
@@ -336,7 +417,11 @@ class WekaComparator extends java.awt.Component{
             Iterator<Row> iterator = datatypeSheet.iterator();
             ArrayList<ArrayList<String>> table = new ArrayList<>();
             ArrayList<String> headings = new ArrayList<>();
-            int i = 0, k;
+            int i = 0, k = 0;
+
+            //
+            // Load testing file sheet into memory
+            //
             while (iterator.hasNext()) {
 
                 Row currentRow = iterator.next();
@@ -367,11 +452,9 @@ class WekaComparator extends java.awt.Component{
                 }
                 i++;
             }
-//            System.out.println();
-//            System.out.println(headings);
 
             //////////////////////////////////////////////////////////////////////////////////////////////////////
-            ///////////////////////
+            ///////////////////////  Loading rule table input
             //////////////////////////////////////////////////////////////////////////////////////////////////////
 
             FileInputStream exRule = new FileInputStream(new File(fname));
@@ -381,14 +464,13 @@ class WekaComparator extends java.awt.Component{
             ArrayList<ArrayList<String>> ruleTable = new ArrayList<>();
             ArrayList<String> ruleHeadings = new ArrayList<>();
             i = 0;
-            k = 0;
+//            k = 0;
             while (iterator.hasNext()) {
                 Row currentRow = iterator.next();
                 Iterator<Cell> cellIterator = currentRow.iterator();
                 k = 0;
 
                 while (cellIterator.hasNext()) {
-
                     Cell currentCell = cellIterator.next();
                     if (i == 0) {
                         ruleHeadings.add(currentCell.getStringCellValue());
@@ -412,13 +494,16 @@ class WekaComparator extends java.awt.Component{
             }
 
 
-//            System.out.println(ruleHeadings);
-
-            ArrayList<String> testLabels = new ArrayList<>(Collections.nCopies(ruleTable.get(1).size(), ""));
+//            ArrayList<String> testLabels = new ArrayList<>(Collections.nCopies(ruleTable.get(1).size(), ""));
             ArrayList<Integer> split = new ArrayList<>();
+//            ArrayList<String> match = new ArrayList<>();
             ArrayList<String> ri = new ArrayList<>();
+
+            //
+            // Break the rules up and compare them
+            //
             for (int ti = 0; ti < table.get(1).size(); ti++) {
-                String matches = "";
+//                String matches = "";
                 System.out.printf("\r%.2f%%", ((double) ti / (double) table.get(1).size()) * 100.0);
                 ArrayList<Integer> successIndex = new ArrayList<>();
 
@@ -432,28 +517,37 @@ class WekaComparator extends java.awt.Component{
                             Float val = Float.parseFloat(r.substring(r.indexOf(">=") + 2));
                             int index = headings.indexOf(h.trim());
                             success = Float.parseFloat(table.get(index).get(ti)) >= val;
+                            break;
                         } else if (r.contains("<=")) {
                             String h = r.substring(0, r.indexOf("<="));
                             Float val = Float.parseFloat(r.substring(r.indexOf("<=") + 2));
                             int index = headings.indexOf(h.trim());
                             success = Float.parseFloat(table.get(index).get(ti)) <= val;
+                            break;
                         } else if (r.contains("<")) {
                             String h = r.substring(0, r.indexOf("<"));
                             Float val = Float.parseFloat(r.substring(r.indexOf("<") + 1));
                             int index = headings.indexOf(h.trim());
                             success = Float.parseFloat(table.get(index).get(ti)) < val;
+                            break;
                         } else if (r.contains(">")) {
                             String h = r.substring(0, r.indexOf(">"));
                             Float val = Float.parseFloat(r.substring(r.indexOf(">") + 1));
                             int index = headings.indexOf(h.trim());
                             success = Float.parseFloat(table.get(index).get(ti)) > val;
+                            break;
                         } else if (r.contains("=")) {
                             String h = r.substring(0, r.indexOf("="));
                             Float val = Float.parseFloat(r.substring(r.indexOf("=") + 1));
                             int index = headings.indexOf(h.trim());
                             success = Float.parseFloat(table.get(index).get(ti)) == val;
+                            break;
                         }
                     }
+
+                    //
+                    // If success add the index
+                    //
                     if (success) {
                         if (Float.parseFloat(ruleTable.get(3).get(c)) > Float.parseFloat(input))
                             if (Float.parseFloat(ruleTable.get(5).get(c)) > Float.parseFloat(percentage))
@@ -461,9 +555,9 @@ class WekaComparator extends java.awt.Component{
                     }
                 }
 
-                //////
-//                    System.out.println(successIndex.size());
-
+                //
+                // Compose the data
+                //
                 String tmp = "[";
                 int count = 1;
                 for (int si = 0; si < successIndex.size(); si++) {
@@ -491,7 +585,7 @@ class WekaComparator extends java.awt.Component{
 
                  System.out.println("\r100%");
                 ////////////////////////////////////////////////////////////////////////////////
-                ////
+                //// Begin writing the data
                 ///////////////////////////////////////////////////////////////////////////////
                 System.out.println("Writing ...");
                 XSSFWorkbook out = new XSSFWorkbook();
@@ -504,7 +598,9 @@ class WekaComparator extends java.awt.Component{
                 row = successSheet.createRow(sr++);
                 row.createCell(sc++).setCellValue("#");
                 row.createCell(sc++).setCellValue("Training Matches");
+                row.createCell(sc++).setCellValue("Label Match Count");
                 row.createCell(sc).setCellValue("Test Label");
+
                 int ll = 0;
                 for (int si = 0; si < table.get(1).size(); si++) {
                     System.out.printf("\r%.2f%%",((double)si/(double)table.get(1).size()) * 100.0);
@@ -513,15 +609,70 @@ class WekaComparator extends java.awt.Component{
                     sc = 0;
                     row.createCell(sc++).setCellValue(si + 1);
 
-                    row.createCell(sc++).setCellValue(ri.get(ll++));
+                    row.createCell(sc++).setCellValue(ri.get(ll));
+
+                    ArrayList<Integer> labelValue = new ArrayList<>();
+                    ArrayList<String> labels = new ArrayList<>();
+                    JSONArray json = new JSONArray(ri.get(ll++));
+
+                    for(int it = 0; it < json.length(); it++) {
+                        JSONObject element = json.getJSONObject(it);
+                        String label = element.getString("label");
+                        int val = element.getInt("+");
+                        if(labels.indexOf(label) != -1) {
+                            labelValue.set(labels.indexOf(label),labelValue.get(labels.indexOf(label))+val);
+                        }
+                        else {
+                            labels.add(label);
+                            labelValue.add(0);
+                        }
+                    }
+
+                    String matched = "{";
+                    for (int it = 0; it < labelValue.size(); it++)
+                    {
+                        if (it < labelValue.size()-1)
+                            matched += "\""+ labels.get(it) + "\": " + labelValue.get(it) + ", ";
+                        else
+                            matched += "\"" + labels.get(it) + "\": " + labelValue.get(it) + "}";
+                    }
+                    row.createCell(sc++).setCellValue(matched);
+
                     row.createCell(sc).setCellValue(table.get(table.size() - 1).get(si));
 
                     if (split.get(si) > 1)
                     {
                         for (int j = 1; j < split.get(si); j++) {
                             row = successSheet.createRow(sr++);
-                            row.createCell(1).setCellValue(ri.get(ll++));
-                            row.createCell(2).setCellValue(table.get(table.size() - 1).get(si));
+                            row.createCell(1).setCellValue(ri.get(ll));
+                            labelValue = new ArrayList<>();
+                            labels = new ArrayList<>();
+                            json = new JSONArray(ri.get(ll++));
+
+                            for(int it = 0; it < json.length(); it++) {
+                                JSONObject element = json.getJSONObject(it);
+                                String label = element.getString("label");
+                                int val = element.getInt("+");
+                                if(labels.indexOf(label) != -1) {
+                                    labelValue.set(labels.indexOf(label),labelValue.get(labels.indexOf(label))+val);
+                                }
+                                else {
+                                    labels.add(label);
+                                    labelValue.add(0);
+                                }
+                            }
+
+                            matched = "{";
+                            for (int it = 0; it < labelValue.size(); it++)
+                            {
+                                if (it < labelValue.size()-1)
+                                    matched += "\"" + labels.get(it) + "\"" + ": " + labelValue.get(it) + ", ";
+                                else
+                                    matched += "\"" + labels.get(it) + "\"" + ": " + labelValue.get(it) + "}";
+                            }
+                            row.createCell(2).setCellValue(matched);
+
+                            row.createCell(3).setCellValue(table.get(table.size() - 1).get(si));
                         }
                     }
 
