@@ -78,7 +78,7 @@ class WekaComparator extends java.awt.Component{
             int type2 = Integer.parseInt(scan.nextLine());
             System.out.print("Please choose one or multiple files (pop-up window): ");
             final JFileChooser fileChooser = new JFileChooser();
-
+            int attributes = 0;
 
             if (type2 == 0)
             {
@@ -116,6 +116,8 @@ class WekaComparator extends java.awt.Component{
                             System.out.println("");
                             System.out.print("Enter percentage success to filter (> %): ");
                             percentage = scan.nextLine();
+                            System.out.print("Enter number of attributes to filter (> ): ");
+                            attributes = Integer.parseInt(scan.nextLine());
                         }
 
 
@@ -142,7 +144,7 @@ class WekaComparator extends java.awt.Component{
 
                                     if (!value.equals("") && !percentage.equals("")) {
                                         System.out.println("Processing ...");
-                                        filterTable(dest, filter, value, percentage);
+                                        filterTable(dest, filter, value, percentage, attributes);
                                     } else
                                         System.out.println("ERROR: Value or percentage cannot be empty");
 
@@ -199,10 +201,12 @@ class WekaComparator extends java.awt.Component{
                             System.out.println("");
                             System.out.print("Enter percentage success to filter (> %): ");
                             String percentage = scan.nextLine();
+                            System.out.print("Enter number of attributes to filter (> ): ");
+                            attributes = Integer.parseInt(scan.nextLine());
 
                             if (!value.equals("") && !percentage.equals("")) {
                                 System.out.println("Processing ...");
-                                filterTable(dest, filter, value, percentage);
+                                filterTable(dest, filter, value, percentage, attributes);
                             } else
                                 System.out.println("ERROR: Value or percentage cannot be empty");
                         }
@@ -408,7 +412,7 @@ class WekaComparator extends java.awt.Component{
         }
     }
 
-    private void filterTable(String fname, String filter, String input, String percentage) {
+    private void filterTable(String fname, String filter, String input, String percentage, int attributes) {
         try {
             ///// FILTER
             FileInputStream excelFile = new FileInputStream(new File(filter));
@@ -511,45 +515,68 @@ class WekaComparator extends java.awt.Component{
                     boolean success = true;
 
                     String[] rules = ruleTable.get(1).get(c).split("AND");
-                    for (String r : rules) {
-                        if (r.contains(">=")) {
-                            String h = r.substring(0, r.indexOf(">="));
-                            Float val = Float.parseFloat(r.substring(r.indexOf(">=") + 2));
-                            int index = headings.indexOf(h.trim());
-                            success = Float.parseFloat(table.get(index).get(ti)) >= val;
-                            break;
-                        } else if (r.contains("<=")) {
-                            String h = r.substring(0, r.indexOf("<="));
-                            Float val = Float.parseFloat(r.substring(r.indexOf("<=") + 2));
-                            int index = headings.indexOf(h.trim());
-                            success = Float.parseFloat(table.get(index).get(ti)) <= val;
-                            break;
-                        } else if (r.contains("<")) {
-                            String h = r.substring(0, r.indexOf("<"));
-                            Float val = Float.parseFloat(r.substring(r.indexOf("<") + 1));
-                            int index = headings.indexOf(h.trim());
-                            success = Float.parseFloat(table.get(index).get(ti)) < val;
-                            break;
-                        } else if (r.contains(">")) {
-                            String h = r.substring(0, r.indexOf(">"));
-                            Float val = Float.parseFloat(r.substring(r.indexOf(">") + 1));
-                            int index = headings.indexOf(h.trim());
-                            success = Float.parseFloat(table.get(index).get(ti)) > val;
-                            break;
-                        } else if (r.contains("=")) {
-                            String h = r.substring(0, r.indexOf("="));
-                            Float val = Float.parseFloat(r.substring(r.indexOf("=") + 1));
-                            int index = headings.indexOf(h.trim());
-                            success = Float.parseFloat(table.get(index).get(ti)) == val;
-                            break;
+                    Integer[] multi = new Integer[table.size()];
+                    Arrays.fill(multi,1);
+
+                        for (String r : rules) {
+                            if (r.contains(">=")) {
+                                String h = r.substring(0, r.indexOf(">="));
+                                Float val = Float.parseFloat(r.substring(r.indexOf(">=") + 2));
+                                int index = headings.indexOf(h.trim());
+                                multi[index] += 1;
+                                success = Float.parseFloat(table.get(index).get(ti)) >= val;
+                                if (!success)
+                                    break;
+                            } else if (r.contains("<=")) {
+                                String h = r.substring(0, r.indexOf("<="));
+                                Float val = Float.parseFloat(r.substring(r.indexOf("<=") + 2));
+                                int index = headings.indexOf(h.trim());
+                                multi[index] += 1;
+                                success = Float.parseFloat(table.get(index).get(ti)) <= val;
+                                if (!success)
+                                    break;
+                            } else if (r.contains("<")) {
+                                String h = r.substring(0, r.indexOf("<"));
+                                Float val = Float.parseFloat(r.substring(r.indexOf("<") + 1));
+                                int index = headings.indexOf(h.trim());
+                                multi[index] += 1;
+                                success = Float.parseFloat(table.get(index).get(ti)) < val;
+                                if (!success)
+                                    break;
+                            } else if (r.contains(">")) {
+                                String h = r.substring(0, r.indexOf(">"));
+                                Float val = Float.parseFloat(r.substring(r.indexOf(">") + 1));
+                                int index = headings.indexOf(h.trim());
+                                multi[index] += 1;
+                                success = Float.parseFloat(table.get(index).get(ti)) > val;
+                                if (!success)
+                                    break;
+                            } else if (r.contains("=")) {
+                                String h = r.substring(0, r.indexOf("="));
+                                Float val = Float.parseFloat(r.substring(r.indexOf("=") + 1));
+                                int index = headings.indexOf(h.trim());
+                                multi[index] += 1;
+                                success = Float.parseFloat(table.get(index).get(ti)) == val;
+                                if (!success)
+                                    break;
+                            }
                         }
+
+                    int count_att = 0;
+                    for (Integer n : multi)
+                    {
+                        if (n > 1)
+                            count_att++;
                     }
+//                    System.out.println("\n\n" + count_att);
 
                     //
                     // If success add the index
                     //
                     if (success) {
-                        if (Float.parseFloat(ruleTable.get(3).get(c)) > Float.parseFloat(input))
+                        
+                        if (count_att > attributes)
+                          if (Float.parseFloat(ruleTable.get(3).get(c)) > Float.parseFloat(input))
                             if (Float.parseFloat(ruleTable.get(5).get(c)) > Float.parseFloat(percentage))
                                 successIndex.add(c);
                     }
@@ -636,6 +663,8 @@ class WekaComparator extends java.awt.Component{
                         else
                             matched += "\"" + labels.get(it) + "\": " + labelValue.get(it) + "}";
                     }
+                    if (matched.equals("{"))
+                        matched += "}";
                     row.createCell(sc++).setCellValue(matched);
 
                     row.createCell(sc).setCellValue(table.get(table.size() - 1).get(si));
@@ -670,6 +699,8 @@ class WekaComparator extends java.awt.Component{
                                 else
                                     matched += "\"" + labels.get(it) + "\"" + ": " + labelValue.get(it) + "}";
                             }
+                            if (matched.equals("{"))
+                                matched += "}";
                             row.createCell(2).setCellValue(matched);
 
                             row.createCell(3).setCellValue(table.get(table.size() - 1).get(si));
@@ -679,9 +710,10 @@ class WekaComparator extends java.awt.Component{
 
                 }
                 System.out.println("\r100%");
-                FileOutputStream outputStream = new FileOutputStream(fname + "_Compared_" + input + "_" + percentage + "%_.xlsx");
+                FileOutputStream outputStream = new FileOutputStream(fname + "_Compared_" + input + "_" + percentage + "%_Att_"+attributes+"_.xlsx");
                 out.write(outputStream);
                 out.close();
+                System.out.println("Output file: " + fname + "_Compared_" + input + "_" + percentage + "%_Att_"+attributes+"_.xlsx");
                 System.out.println("Completed Successfully");
 
 
