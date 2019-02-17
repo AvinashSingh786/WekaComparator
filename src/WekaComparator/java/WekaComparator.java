@@ -1,27 +1,43 @@
-
-import com.sun.org.apache.xpath.internal.SourceTree;
-
 import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
-import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+
+
+class Node {
+//    public ArrayList<String> rule;
+    String rule;
+    Node left;
+    Node right;
+    boolean isLeft;
+
+    Node() {
+//        rule = new ArrayList<String>();
+        rule = "";
+        left = null;
+        right = null;
+        isLeft = false;
+    }
+
+    Node(String r) {
+//        rule = new ArrayList<String>();
+//        rule.add(r);
+        rule = r;
+        isLeft = false;
+    }
+}
+
+
 
 
 class WekaComparator extends java.awt.Component{
@@ -29,7 +45,6 @@ class WekaComparator extends java.awt.Component{
     private Label headerLabel;
     private Label statusLabel;
     private Panel controlPanel;
-
     private WekaComparator() {
 //        makeGUI();
         start_process();
@@ -72,6 +87,7 @@ class WekaComparator extends java.awt.Component{
                     "                                                                       -- By Avinash Singh\n");
             System.out.println("=============================================================================================");
             System.out.println("\nWelcome to the Weka Comparator\n");
+//            parseTree(readFile("J48.txt"));
             System.out.print("Please choose input file type (0 - tree, 1 - part): ");
             int type = Integer.parseInt(scan.nextLine());
             System.out.print("Please choose an option (0 - multiple files, 1 - single file): ");
@@ -132,8 +148,9 @@ class WekaComparator extends java.awt.Component{
                                     String dfile = child.getParent() + "\\" + file;
                                     if (type == 0) {
                                         dfile = child.getParent() + "\\TREE_" + file;
-                                        System.out.println("Converted to TREE format at: " + "\\TREE_" + file);
-                                        writePart(split(readFile(file)), file);
+                                        System.out.println("Converting to TREE format at: " + "\\TREE_" + file);
+                                        System.out.println("Please wait ...");
+                                        writePart(parseTree(readFile(file)), file);
                                     }
 
                                     System.out.print("Save as (xlsx): ");
@@ -176,7 +193,7 @@ class WekaComparator extends java.awt.Component{
                     if (type == 0) {
                         dfile = selectedFile.getParent() + "\\TREE_" + selectedFile.getName();
                         System.out.println("Converted to TREE format at: " + dfile);
-                        writePart(split(readFile(file)), dfile);
+                        writePart(parseTree(readFile(file)), dfile);
                     }
 
                     System.out.print("Save as (xlsx): ");
@@ -220,72 +237,238 @@ class WekaComparator extends java.awt.Component{
         catch (Exception e)
         {
             System.out.println("ERROR: Unexpected/incorrect input");
+            e.printStackTrace();
         }
 
     }
 
-    private void getFile(){
-        headerLabel.setText("Select TREE or PART text file: ");
-        Button showFileDialogButton = new Button("Open File");
-        showFileDialogButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                 start_process();
-            }
-        });
+    String printTree(Node node, ArrayList<String> paths, StringBuilder toString)
+    {
+        if (node == null)
+            return "";
 
-        controlPanel.add(showFileDialogButton);
-        mainFrame.setVisible(true);
+        paths.add(node.rule);
+
+        for (int i = 0; i < paths.size(); i++)
+        {
+            if (paths.get(i).contains(":")) {
+                toString.append(paths.get(i));
+                toString.append("\n\n");
+            }
+            else
+            {   if (paths.get(i).length() > 1) {
+                    toString.append(paths.get(i));
+                    toString.append(" AND \n");
+                }
+            }
+        }
+
+        printTree(node.right, paths, toString);
+        printTree(node.left,paths, toString);
+        paths.remove(paths.size()-1);
+        return toString.toString();
     }
 
-    private String split(String tree){
+    private String parseTree(String tree) {
 
         String[] lines = tree.split("\n");
-        List<List<String>> lists = new ArrayList<List<String>>();
-        for(String line : lines){
-            List<String> temp = new ArrayList<String>();
-            while(line.indexOf("|") != -1){
-                temp.add("|");
-                line = line.replaceFirst("\\|", "");
-            }
-            temp.add(line.trim());
-            lists.add(temp);
-        }
+        Node root = new Node();
 
-        for(int i = 0; i < 3; i++){
-            lists.remove(0);
-        }
-        for(int i = 0; i < 4; i++){
-            lists.remove(lists.size()-1);
-        }
-        List<String> substitutes = new ArrayList<String>();
+        for (String line: lines) {
+            if (line.contains("<") || line.contains(">") || line.contains(">=") || line.contains("<=")) {
+                int count = line.length() - line.replace("|", "").length();
+                Node tmp = root;
+                for (int i = 0; i < count; i++)
+                {
+                    if (tmp.isLeft) {
+                        tmp = tmp.left;
+                    }
+                    else {
+                        if (tmp.right != null) {
+                            tmp = tmp.right;
+                        }
+                    }
+                 }
 
-        for(List<String> list : lists){
-            for(int i = 0; i < list.size(); i++){
-                if(!list.get(i).contains(":") && !list.get(i).equals("|") && !substitutes.contains(list.get(i))){
-                    substitutes.add(list.get(i));
+                line = line.replace("|", "").trim();
+
+                if (tmp.right != null) {
+                    tmp.left = new Node(line);
+                    tmp.isLeft = true;
+                }
+                else {
+                    tmp.right = new Node(line);
                 }
             }
         }
-        for(List<String> list : lists){
-            for(int i = 0; i < list.size(); i++){
-                if(list.get(i).equals("|")){
-                    list.set(i, substitutes.get(i));
-                }
-            }
-        }
-        StringBuilder sb = new StringBuilder();
-        for(List<String> list : lists){
-            String line = "";
-            for(String s : list){
-                line = line + "\n"+s ;
-            }
-            if(line.endsWith(")")){
-                sb.append(line+"\n");
-            }
-        }
-        return sb.toString();
+
+        return printTree(root, new ArrayList<String>(), new StringBuilder());
     }
+
+//    private void printRight(Node root) {
+//        while (root != null)
+//        {
+//            System.out.println(root.rule);
+//            root = root.right;
+//        }
+//    }
+//    private String split(String tree) {
+//
+//        String[] lines = tree.split("\n");
+//        List<List<String>> lists = new ArrayList<List<String>>();
+//        for(String line : lines){
+//            List<String> temp = new ArrayList<String>();
+//            while(line.indexOf("|") != -1){
+//                temp.add("|");
+//                line = line.replaceFirst("\\|", "");
+//            }
+//            temp.add(line.trim());
+//            lists.add(temp);
+//        }
+//
+//        for(int i = 0; i < 4; i++){
+//            lists.remove(0);
+//        }
+//        for(int i = 0; i < 2; i++){
+//            lists.remove(lists.size()-1);
+//        }
+//        List<String> substitutes = new ArrayList<String>();
+//        List<Integer> rootIndex = new ArrayList<Integer>();
+//        List<Integer> breakIndex = new ArrayList<Integer>();
+//        int count = 0;
+//        int prev = 0;
+//        int curr = 0;
+//        boolean flag = true;
+//        for(List<String> list : lists){
+//            int tmp = 0;
+//            if (flag){
+//                flag = false;
+//                prev = list.size();
+//            }
+//            curr = list.size();
+//            for(int i = 0; i < list.size(); i++) {
+//                if (list.size() == 1) {
+//                    rootIndex.add(count);
+//                    curr = 0;
+//                    prev = 0;
+//                }
+//                if(!list.get(i).contains(":") && !list.get(i).equals("|") && !substitutes.contains(list.get(i))){
+//                    substitutes.add(list.get(i));
+//                    count++;
+//                }
+//                curr = list.size();
+//
+////                if (curr > prev)
+////                {
+////                    tmp = curr - prev;
+////
+////                }
+//            }
+//            breakIndex.add(abs(curr-prev));
+//            prev = list.size();
+//        }
+////        boolean flag = false;
+//        int offset = 0;
+//        int tmp = 0;
+//        int k = 1;
+//        int clist = 0;
+//        int weighted = 0;
+//        prev = 0;
+//        curr = 0;
+////        for(List<String> list : lists){
+////            if (list.size() == 1) {
+////                prev = list.size();
+////                offset += rootIndex.get(k);
+////                System.out.println("\n\nOfset\n" + offset);
+////                k++;
+////                weighted = 0;
+////            }
+////            curr = list.size();
+////            for(int i = 0; i < list.size(); i++){
+////                if(list.get(i).equals("|")){
+////                    weighted = breakIndex.get(clist);
+////                    if (curr - prev < 0) {
+////                        weighted = abs(curr-prev);
+////                    }
+////                        list.set(i, substitutes.get(i + offset + weighted));
+////
+////                }
+////            }
+////            clist++;
+////            prev = list.size();
+////        }
+////
+//        List<Integer> subIndex = new ArrayList<Integer>();
+//        for (int i = 0; i < 100; i++)
+//            subIndex.add(i);
+//
+//        for(List<String> list : lists){
+//            if (list.size() == 1 && prev != 0 && curr != 0) {
+//                prev = list.size();
+//                offset += rootIndex.get(k);
+//
+//
+//                for (int j = 0; j < 100; j++)
+//                {
+//                    subIndex.set(j, rootIndex.get(k) + j);
+//                }
+//                k++;
+//                System.out.println("\n\nOfset\n" + subIndex);
+//            }
+//            curr = list.size();
+//            if (curr-prev < 0)
+//            {
+//
+//                for (int j = prev; j > 0; j--)
+//                {
+//                    if (subIndex.get(j)+1 < substitutes.size())
+//                        subIndex.set(j, subIndex.get(j)+1);
+//                }
+////                subIndex.set(curr-1, subIndex.get(curr)+1);
+//            }
+//            else if (curr-prev > 0){
+//
+//
+//                    subIndex.set(curr, subIndex.get(curr)+1);
+//
+//            }
+////
+//
+//
+//            for(int i = 0; i < list.size(); i++){
+//                if(list.get(i).equals("|")){
+//                    list.set(i, substitutes.get(subIndex.get(i)));
+//                }
+//            }
+//            clist++;
+//            prev = list.size();
+//        }
+//
+//
+//
+//
+//        System.out.println("\n\nOfset\n" + subIndex);
+//
+//
+//
+//
+//
+//
+////        Extracting the + and - values
+//        StringBuilder sb = new StringBuilder();
+//        for(List<String> list : lists){
+//            String line = "";
+//            for(String s : list){
+//                line = line + "\n"+s ;
+//            }
+//            if(line.endsWith(")")){
+//                sb.append(line+"\n");
+//            }
+//        }
+//        writePart(sb.toString(), "j48PART.txt");
+//
+//        return sb.toString();
+//    }
 
     private String readFile(String filePath)
     {
@@ -304,6 +487,7 @@ class WekaComparator extends java.awt.Component{
 
     private void writePart(String input, String fname)
     {
+        input = input.substring(0,input.length()-1);
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(fname))) {
             bw.write(input);
             System.out.println("Successfully saved");
@@ -575,7 +759,7 @@ class WekaComparator extends java.awt.Component{
                     //
                     if (success) {
                         
-                        if (count_att > attributes)
+//                        if (count_att > attributes)
                           if (Float.parseFloat(ruleTable.get(3).get(c)) > Float.parseFloat(input))
                             if (Float.parseFloat(ruleTable.get(5).get(c)) > Float.parseFloat(percentage))
                                 successIndex.add(c);
@@ -602,9 +786,7 @@ class WekaComparator extends java.awt.Component{
                         ri.add(tmp + "]");
                         tmp = "[";
                         count += 1;
-
                     }
-
                 }
                 ri.add(tmp + "]");
                 split.add(count);
@@ -659,9 +841,9 @@ class WekaComparator extends java.awt.Component{
                     for (int it = 0; it < labelValue.size(); it++)
                     {
                         if (it < labelValue.size()-1)
-                            matched += "\""+ labels.get(it) + "\": " + labelValue.get(it) + ", ";
+                            matched += "\""+ labels.get(it) + "\": " + (labelValue.get(it)+1) + ", ";
                         else
-                            matched += "\"" + labels.get(it) + "\": " + labelValue.get(it) + "}";
+                            matched += "\"" + labels.get(it) + "\": " + (labelValue.get(it)+1) + "}";
                     }
                     if (matched.equals("{"))
                         matched += "}";
@@ -695,9 +877,9 @@ class WekaComparator extends java.awt.Component{
                             for (int it = 0; it < labelValue.size(); it++)
                             {
                                 if (it < labelValue.size()-1)
-                                    matched += "\"" + labels.get(it) + "\"" + ": " + labelValue.get(it) + ", ";
+                                    matched += "\"" + labels.get(it) + "\"" + ": " + (labelValue.get(it)+1) + ", ";
                                 else
-                                    matched += "\"" + labels.get(it) + "\"" + ": " + labelValue.get(it) + "}";
+                                    matched += "\"" + labels.get(it) + "\"" + ": " + (labelValue.get(it)+1) + "}";
                             }
                             if (matched.equals("{"))
                                 matched += "}";
